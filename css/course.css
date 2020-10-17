@@ -1,0 +1,152 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+}
+@keyframes move {
+  0%{
+    top:-50%;
+  }
+  50%{
+    top:-50%;
+  }
+  100%{
+    top:72%;
+  }
+}
+@keyframes move_2 {
+    0%{
+      top:-50%;
+    }
+    50%{
+      top:-50%;
+    }
+    75%{
+      top:60%;
+    }
+    100%{
+      top:50%;
+    }
+}
+@keyframes move_3 {
+    0%{
+      top:-50%;
+    }
+    50%{
+      top:70%;
+    }
+    100%{
+      top:60%;
+    }
+  }
+div.img_class{
+  height: 600px;
+  background-image: url("../img/worldfameus_2.png");
+  background-repeat: no-repeat;
+  /* background-color: rgba(13, 13, 13, 1); */
+  background-size: cover;
+  overflow: hidden;
+  min-width: 1200px;
+}
+div.banner{
+  /* border : 3px solid red ; */
+  position: relative;
+  height: 100%;
+}
+div.sp_time{
+  position: absolute;
+  color: #e3632d;
+  right: 9%;
+  top:72%;
+  transform:rotate(20deg);
+  font-size: 40px;
+  animation-name: move;
+  animation-duration: 4.5s;
+  animation-timing-function: ease-in-out;
+
+}
+div.sp_title{
+  position: absolute;
+  color: #e77e4d;
+  right: 5%;
+  top:50%;
+  transform:rotate(20deg);
+  font-size: 50px;
+  animation-name: move_2;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+
+}
+div.sp_team{
+  position: absolute;
+  color: #f94e3f;
+  right: 3%;
+  top:60%;
+  transform:rotate(20deg);
+  font-size: 60px;
+  animation-name: move_3;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
+}
+div.monday{
+  width: 1200px;
+  margin: 0 auto;
+  /* border: 1px solid black; */
+  text-align: center;
+}
+div.monday>h1{
+  color: #353866;
+
+}
+div.monday_left,div.monday_right{
+  display: inline-block;
+  width: 500px;
+  /* border: 1px solid blue; */
+  vertical-align: top;
+}
+div.monday_left_img>img,div.monday_right_img>img{
+  width: 350px;
+}
+div.monday_right{
+  padding-top: 250px;
+}
+div.monday_left_img_text,div.monday_right_img_text{
+  color: #9055a2;
+  font-size: 26px;
+}
+p{
+  color: gray;
+}
+p.time{
+  color: #9055a2;
+  font-size: 26px;
+}
+p.text{
+  color: #d499b9;
+}
+div.rent{
+  border-radius: 10px;
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  padding: 20px;
+  background: radial-gradient(circle at 25px 25px, rgba(200,226,237,1) 0%, rgba(176,176,227,1) 45%, rgba(247,170,151,1) 100%);
+  z-index: 0;
+  overflow: hidden;
+}
+div.rent::before{
+  content: " ";
+  width: 30%;
+  height: 100%;
+  background-color: rgba(255, 255, 255 , .5 );
+  z-index: 1;
+  position: absolute;
+  top:0;
+  left:-40%;
+  transform: skewX(20deg);
+  transition-duration: .3s;
+}
+div.rent:hover::before{
+  left:110%;
+}

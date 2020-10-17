@@ -1,0 +1,87 @@
+img.room{
+  width: 100%;
+  height: 100%;
+}
+div.space_block{
+  perspective: 1000px;
+  perspective-origin: 50%-150px ;
+  background-image: url("../img/room/space.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 680px;
+  min-width: 1200px;
+}
+div.space{
+  transform-style:preserve-3d;
+  position: relative;
+  height: 600px;
+  width: 1200px;
+  margin: 0 auto;
+}
+div.space_img1,div.space_img2,div.space_img3,div.space_img4,div.space_img5,div.space_img6,div.space_img7{
+  box-shadow: 3px 3px 3px black;
+  position: absolute;
+  width: 250px;
+  height: 150px;
+  transition-duration:1s;
+}
+div.space_img1{
+  transform: rotateY(30deg) scale(1);
+  bottom: 0;
+  left: 45%;
+}
+div.space_img2{
+  transform: rotateY(30deg)scale(1);
+  bottom: 0;
+  left: 55%;
+}
+div.space_img3{
+  transform: rotateY(30deg)scale(1);
+  bottom: 0;
+  left: 65%;
+}
+div.space_img4{
+  transform:rotateY(30deg)scale(1);
+  bottom: 0;
+  left: 75%;
+}
+div.space_img5{
+  transform:rotateY(30deg)scale(1);
+  bottom: 0;
+  left: 83%;
+}
+div.space_img1:hover,div.space_img2:hover,div.space_img3:hover,div.space_img4:hover,div.space_img5:hover{
+  transform: rotateY(30deg) scale(1.2);
+}
+h3{
+  text-align: center;
+  color: #353866;
+}
+div.text{
+  position: absolute;
+  top: 25%;
+  right:15%;
+  opacity: 1;
+  transition-duration:1s;
+  font-size: 20px;
+  text-align: center;
+  color: #9055a2 ;
+}
+div.text1,div.text2,div.text3,div.text4,div.text5{
+  position: absolute;
+  top: 25%;
+  right:0%;
+  opacity: 0;
+  text-align: center;
+  transition-duration:1s;
+  font-size: 20px;
+  color: #9055a2 ;
+
+}
+div.rent{
+  width: 100px;
+  margin: 20px auto;
+  padding: 5px 10px 5px 10px ;
+  background-color: #353866;
+  color: white;
+}
