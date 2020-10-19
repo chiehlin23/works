@@ -187,6 +187,8 @@ div.intro_title{
 }
 div.intro_title>h1{
   color: #353866;
+  font-size: 60px;
+  
 }
 div.diversification,div.grade,div.online{
   position: absolute;
@@ -261,10 +263,12 @@ div.price{
 div.grade_intro{
   width: 1200px;
   margin: 0 auto;
+  padding: 50px 0 20px 0;
 }
-h2{
+h2.title2{
   text-align: center;
   color: #9055a2;
+  font-size: 40px;
 }
 div.grade_intro>ul>li{
   color: #d499b9;
@@ -321,14 +325,19 @@ div.alone:hover{
   transform: scale(1.2);
 }
 div.course{
+  padding:50px 0 50px 0 ;
+  width: 100px;
+  margin: 0 auto;
+}
+div.course:hover button.course{
+  border-radius: 20px;
+}
+button.course{
   padding: 10px;
   width: 100px;
   text-align: center;
-  margin: 0 auto;
   transition-duration: 1s;
   background-color: #4f86c6;
   color:white;
-}
-div.course:hover{
-  border-radius: 20px;
+  
 }

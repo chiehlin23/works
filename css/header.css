@@ -6,20 +6,25 @@ body{
 font-family: 'Sansita Swashed', cursive;
 
 }
+/* img{
+  min-width: 100%;
+} */
 a{
     text-decoration:none;
 }
 
 div.header{
-  /* border: 1px solid black; */
-  width: 1200px;
+  
+  width: 1140px;
   margin: 0 auto;
   font-size: 0;
+ 
+
 }
 div.header_bg{
   background-color: #d4dfe6;;
   width: 100%;
-  min-width: 1200px;
+  min-width: 1140px;
 }
 div.logo{
   display: inline-block;
@@ -30,11 +35,14 @@ img.logo{
   width: 100px;
 }
 div.nav{
-  display: inline-block;
+  display: inline-block; 
   width: 800px;
   /* border: 1px solid black; */
   text-align: center;
-  margin-left: 300px;
+  margin-left: 200px;
+}
+ul.nav{
+  padding: 0;
 }
 ul.nav>li{
   display: inline-block;
@@ -91,3 +99,48 @@ div.instruction:hover ul.list{
   height: 200px;
   opacity: 1;
 }
+div.instruction>span{
+  position: relative;
+  cursor:pointer;
+}
+div.instruction>span:after{
+  content: " ";
+  border-top: 8px solid #353866 ;
+  border-right:8px solid#d4dfe6 ;
+  border-bottom: 8px solid #d4dfe6;
+  border-left:8px solid#d4dfe6 ;
+  position: absolute;
+  top:50%;
+  right: -15%;
+}
+div.burger{
+  display: none;
+}
+div.fb_top,div.ig_top{
+  display: none;
+}
+
+div.bread>li{
+  display: inline-block;
+  padding: 10px;
+
+}
+div.bread>li::after{
+  content: ">";
+  margin-left: 20px;
+
+}
+div.bread>li:last-child::after{
+  content: " ";
+  
+}
+div.bread>li>a{
+  color: #353866;
+}
+div.bread>li:last-child{
+  color: #9055a2;
+}
+div.bread>li>a:hover{
+  color:#6aafe6;
+}
+

@@ -1,3 +1,15 @@
+div.bread>li:nth-child(3)::after{
+  content: "/";
+  margin-left:4px ;
+  
+}
+div.bread>li:nth-child(3){
+  padding: 0;
+  padding-left: 10px;
+}
+div.bread>li:nth-child(4){
+  padding: 0;
+}
 div.img_class{
   /* border : 5px solid blue; */
   height: 600px;

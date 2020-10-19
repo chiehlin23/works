@@ -4,6 +4,8 @@
 body{
   margin: 0;
 }
+
+
 @keyframes move {
   0%{
     top:-50%;
@@ -40,6 +42,17 @@ body{
       top:60%;
     }
   }
+  @keyframes move_4 {
+    0%{
+      top:-50%;
+    }
+    50%{
+      top:-50%;
+    }
+    100%{
+      top:76%;
+    }
+  }
 div.img_class{
   height: 600px;
   background-image: url("../img/worldfameus_2.png");
@@ -47,7 +60,7 @@ div.img_class{
   /* background-color: rgba(13, 13, 13, 1); */
   background-size: cover;
   overflow: hidden;
-  min-width: 1200px;
+  min-width: 1140px;
 }
 div.banner{
   /* border : 3px solid red ; */
@@ -69,7 +82,7 @@ div.sp_time{
 div.sp_title{
   position: absolute;
   color: #e77e4d;
-  right: 5%;
+  right: 6%;
   top:50%;
   transform:rotate(20deg);
   font-size: 50px;
@@ -90,10 +103,10 @@ div.sp_team{
   animation-timing-function: ease-in-out;
 }
 div.monday{
-  width: 1200px;
+  width: 1140px;
   margin: 0 auto;
-  /* border: 1px solid black; */
   text-align: center;
+  overflow: hidden;
 }
 div.monday>h1{
   color: #353866;
@@ -102,7 +115,7 @@ div.monday>h1{
 div.monday_left,div.monday_right{
   display: inline-block;
   width: 500px;
-  /* border: 1px solid blue; */
+ 
   vertical-align: top;
 }
 div.monday_left_img>img,div.monday_right_img>img{
@@ -124,6 +137,12 @@ p.time{
 }
 p.text{
   color: #d499b9;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  
 }
 div.rent{
   border-radius: 10px;
@@ -149,4 +168,174 @@ div.rent::before{
 }
 div.rent:hover::before{
   left:110%;
+}
+
+@media screen and (max-width: 1199px){
+
+  
+  div.monday{
+    width: 960px ;
+    margin: 0 auto;
+    text-align: center;
+   
+  }
+  div.monday_left,div.monday_right{
+    display: inline-block;
+    width: 400px;
+    vertical-align: top;
+  }
+  div.img_class{
+    height: 600px;
+    background-image: url("../img/worldfameus_2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    min-width: 960px;
+    
+  }
+  
+  
+
+}
+@media screen and (max-width: 991px){
+  
+  div.sp_time{
+    right: 12%;
+    top: 76%;
+    animation-name: move_4;
+  }
+  div.monday{
+    width: 720px ;
+    margin: 0 auto;
+    text-align: center;
+   
+  }
+  div.monday_left,div.monday_right{
+    display: inline-block;
+    width: 300px;
+    vertical-align: top;
+  }
+  div.img_class{
+    height: 600px;
+    background-image: url("../img/worldfameus_2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    min-width: 720px;
+    
+  }
+  div.monday_left_img>img,div.monday_right_img>img{
+    width: 250px;
+  }
+
+  
+}
+@media screen and (max-width: 767px){
+ 
+
+  div.sp_time{
+    right: 12%;
+    top: 76%;
+    animation-name: move_4;
+  }
+  div.monday{
+    width: 540px ;
+    margin: 0 auto;
+    text-align: center;
+   
+  }
+  div.monday_left,div.monday_right{
+    display: inline-block;
+    width: 300px;
+    vertical-align: top;
+  }
+  div.img_class{
+    height: 600px;
+    background-image: url("../img/worldfameus_2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    min-width: 540px;
+    
+  }
+  div.monday_left_img>img,div.monday_right_img>img{
+    width: 250px;
+  }
+  div.monday_right{
+    padding-top: 0px;
+  }
+  
+}
+@media screen and (max-width: 575px){
+ 
+
+  div.sp_time{
+    right: 12%;
+    top: 76%;
+    animation-name: move_4;
+  }
+  div.monday{
+    width: 100% ;
+    margin: 0 auto;
+    text-align: center;
+   
+  }
+  div.monday_left,div.monday_right{
+    display: inline-block;
+    width: 300px;
+    vertical-align: top;
+  }
+  div.img_class{
+    height: 600px;
+    background-image: url("../img/worldfameus_2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    min-width: 100%;
+    
+  }
+  div.monday_left_img>img,div.monday_right_img>img{
+    width: 250px;
+  }
+  div.monday_right{
+    padding-top: 0px;
+  }
+  
+  div.sp_time{
+    position: absolute;
+    color: #e3632d;
+    right: 20%;
+    top:72%;
+    transform:rotate(20deg);
+    font-size: 20px;
+    animation-name: move;
+    animation-duration: 4.5s;
+    animation-timing-function: ease-in-out;
+  
+  }
+  div.sp_title{
+    position: absolute;
+    color: #e77e4d;
+    right: 6%;
+    top:50%;
+    transform:rotate(20deg);
+    font-size: 40px;
+    animation-name: move_2;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+  
+  }
+  div.sp_team{
+    position: absolute;
+    color: #f94e3f;
+    right: 3%;
+    top:60%;
+    transform:rotate(20deg);
+    font-size: 40px;
+    animation-name: move_3;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+  }
+  
+  }
 }

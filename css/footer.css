@@ -1,12 +1,10 @@
 div.footer{
-  border: 1px solid blue;
   padding: 30px;
-
   background-color: #6c49b8;
-  min-width: 1200px;
+  min-width: 1140px;
 }
 div.footer_block{
-  width: 1200px;
+  width: 1140px;
   margin: 0 auto;
   text-align: center;
   position: relative;
@@ -44,11 +42,13 @@ div.fb{
   position: absolute;
   top:55%;
   right:9%;
+  
 }
 div.ig{
   position: absolute;
   top:40%;
   right:10%;
+  
 }
 div.fb>img{
   width: 65px;
