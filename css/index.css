@@ -11,6 +11,7 @@ div.video_text{
   color: white;
   opacity: .5;
   text-shadow: 3px 3px 3px black;
+  font-family: 'Sansita Swashed', cursive;
 }
 
 div.top_banner{
@@ -20,6 +21,7 @@ div.top_banner{
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  background-position: center center;
   position: relative;
   min-width: 1200px;
 }
@@ -479,6 +481,7 @@ div.item_bg{
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  background-position: center center;
   position: relative;
   min-width: 1200px;
 }
@@ -505,7 +508,7 @@ div.space_infro>ul>li{
 }
 div.img_space{
   display: inline-block;
-  width: 50%;
+  width: 40%;
 }
 div.space_infro{
   display: inline-block;

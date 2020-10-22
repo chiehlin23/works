@@ -6,10 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
   <title>Zoey Dance Studio</title>
   <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/footer.css">
+  <link rel="stylesheet" href="./css/burger.css">
+  <link rel="stylesheet" href="./css/media_header.css">
   <link rel="stylesheet" href="./css/index.css">
   <link rel="stylesheet" href="./vanders/AOS/css.css">
-  <link rel="stylesheet" href="./css/footer.css">
-  <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+    integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
 
 <body>
   <div class="header_bg">
@@ -22,7 +28,7 @@
           <li class="line"><a href="./html/new.html">News</a></li>
           <li>
             <div class="instruction">
-              Introduction
+              <span class="intro">Introduction</span>
               <ul class="list">
                 <li><a href="./html/introduction.html">Normal</a></li>
                 <li><a href="./html/introduction.html">Showcase</a></li>
@@ -32,12 +38,43 @@
           </li>
           <li class="line"><a href="./html/space.html">Space</a></li>
           <li class="line"><a href="./html/items.html">Items</a></li>
-          <li class="line">Log in</li>
+          <li class="login line">Log in</li>
         </ul>
+      </div>
+      <div class="burger">
+        <button class="hamburger hamburger--squeeze" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
       </div>
     </div>
   </div>
+  <!-- ===================================login========================================== -->
+
+  <div class="login-box">
+    <h2>Login</h2>
+    <form>
+      <div class="user-box">
+        <input type="text" name="" required="">
+        <label>Username</label>
+      </div>
+      <div class="user-box">
+        <input type="password" name="" required="">
+        <label>Password</label>
+      </div>
+      <div class="login_submit"><a href="#">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Submit
+        </a>
+      </div>
+    </form>
   </div>
+  <!-- ======================================================== -->
+
   <div class="banner_video">
     <video source src="./video/index_video.mp4" width="100%" height="100%" autoplay loop>
       <!-- <source src="../video/index_video.mp4" type="video/mp4"> -->
@@ -55,20 +92,21 @@
   <div class="BG2">
     <div class="news">
       <div class="new_block">
-        <div class="title_new" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="1000">
+        <div class="title_new" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="1000" data-aos-once：ture>
           <h1 class="title_new"> News</h1>
         </div>
         <div class="new">
           <ul class="new">
-            <li class="new1" data-aos="fade-up-right" data-aos-duration="1000"><a href="./html/new.html">
+            <li class="new1" data-aos="fade-up-right" data-aos-duration="1000" data-aos-once：ture><a
+                href="./html/new.html">
                 <img class="new1" src="./img/new1.jpeg" alt=""></a>
               <p>Keep on dancing vol.6</p></img>
             </li>
-            <li class="new2" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000"><a
+            <li class="new2" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000" data-aos-once：ture><a
                 href="./html/new.html"><img class="new2" src="./img/new2.jpg"></a>
               <p>Student show 9/18 </p></img>
             </li>
-            <li class="new3" data-aos="fade-up-left" data-aos-duration="1000" data-aos-delay="500"><a
+            <li class="new3" data-aos="fade-up-left" data-aos-duration="1000" data-aos-delay="500" data-aos-once：ture><a
                 href="./html/new.html"><img class="new3" src="./img/new3.jpg"></a>
               <p>College high vol.11</p></img>
             </li>
@@ -103,7 +141,7 @@
   </div>
   <div class="class_BG">
     <div class="class_block">
-      <h1 class="class_title" data-aos="fade-down" data-aos-duration="1000">Class Introduction
+      <h1 class="class_title" data-aos="fade-down" data-aos-duration="1000" data-aos-once：ture>Class Introduction
       </h1>
       <div class="class_intro">
         <ul class="class_intro">
@@ -148,13 +186,13 @@
     </div>
   </div>
   <div class="space">
-    <div class="title_space" data-aos="fade-down" data-aos-duration=>
+    <div class="title_space" data-aos="fade-down" data-aos-once：ture>
       <h1>Contact</h1>
     </div>
-    <div class="img_space" data-aos="fade-left" data-aos-duration="3000">
+    <div class="img_space" data-aos="fade-left" data-aos-duration="3000" data-aos-once：ture>
       <img class="map" src="./img/map.png" alt="">
     </div>
-    <div class="space_infro" data-aos="fade-right" data-aos-duration="3000">
+    <div class="space_infro" data-aos="fade-right" data-aos-duration="3000" data-aos-once：ture>
       <ul>
         <li>9th Floor, No. 46, Fuxing Road, Zhongli District, Taoyuan City</li>
         <li>03-425-8183</li>
@@ -164,20 +202,18 @@
     </div>
     <a href="./space.html">
       <div class="space_buttom_block">
-
-
         <div class="space_buttom">
           View Space
         </div>
     </a>
   </div>
   </div>
+
+  <!-- ===========================footer=========================== -->
+
   <div class="footer">
     <div class="footer_block">
-      <div class="fb"><img src="./img/FB.png" alt="">
-      </div>
-      <div class="ig"><img src="./img/ig.png" alt="">
-      </div>
+
       <div class="footer_img"><img src="./img/footer.png" alt="">
       </div>
       <div class="footer_aside">
@@ -211,11 +247,54 @@
         </ul>
       </div>
     </div>
+    <div class="icon">
+      <a href="#"><i class="fab fa-facebook-square fa-3x"></i></a>
+      <a href="#"><i class="fab fa-instagram fa-3x"></i></a>
+      <a href="#"><i class="fab fa-twitter fa-3x"></i></a>
+    </div>
   </div>
+
+  <!-- ===========================js====================== -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="./vanders/AOS/js.js"></script>
   <script>
     AOS.init();
   </script>
+  <script>
+    $(function () {
+      $("li.login").on("click", function () {
+        $("div.login-box").slideToggle();
+        event.stopPropagation();
+      });
+      $("body").on("click", function () {
+        $("div.login-box").css("display", 'none');
+        event.stopPropagation();
+      });
+      $('div.login-box').on('click', function () {
+        $(this).css('display', 'block')
+        event.stopPropagation();
+      })
+    });
+
+    $(function () {
+      $("button.hamburger").on("click", function () {
+        $(this).toggleClass("is-active");
+      });
+
+    });
+    $(function () {
+      $("div.burger").on("click", function () {
+        $("div.nav").slideToggle();
+      });
+    });
+    $(function () {
+      $("span.intro").on("click", function () {
+        $("ul.list").slideToggle();
+      });
+    });
+  </script>
+
 </body>
 
 </html>

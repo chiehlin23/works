@@ -5,10 +5,15 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
   <title>Introduction</title>
-  <link rel="stylesheet" href="../css/introduction.css">
   <link rel="stylesheet" href="../css/header.css">
   <link rel="stylesheet" href="../css/footer.css">
-  <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/burger.css">
+  <link rel="stylesheet" href="../css/media_header.css">
+  <link rel="stylesheet" href="../css/introduction.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+    integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
 </head>
 
 <body>
@@ -19,23 +24,56 @@
         <ul class="nav">
           <li class="line"><a href="./course.html">Course</a></li>
           <li class="line"><a href="./new.html">News</a></li>
-          <li>
+          <li class="page">
             <div class="instruction">
-              Introduction
+              <span class="intro page">Introduction</span>
               <ul class="list">
                 <li><a href="./introduction.html">Normal</a></li>
                 <li><a href="./introduction.html">Showcase</a></li>
                 <li><a href="./introduction.html">Child</a></li>
                 <li><a href="./introduction.html">Special</a></li>
               </ul>
+            </div>
           </li>
           <li class="line"><a href="./space.html">Space</a></li>
           <li class="line"><a href="./items.html">Items</a></li>
-          <li class="line">Log in</li>
+          <li class="line login">Log in</li>
         </ul>
+      </div>
+      <div class="burger">
+        <button class="hamburger hamburger--squeeze" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
       </div>
     </div>
   </div>
+  <!-- ===================================login========================================== -->
+
+  <div class="login-box">
+    <h2>Login</h2>
+    <form>
+      <div class="user-box">
+        <input type="text" name="" required="">
+        <label>Username</label>
+      </div>
+      <div class="user-box">
+        <input type="password" name="" required="">
+        <label>Password</label>
+      </div>
+      <div class="login_submit"><a href="#">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Submit
+        </a>
+      </div>
+    </form>
+  </div>
+  <!-- ======================================================== -->
+
 
   <div class="banner_intro_block">
 
@@ -103,12 +141,12 @@
       <div class="break_intro_block">
         <div class="break_intro">
           <h2 class="pop">BREAKING</h2>
-          <p class="pop">Breakdance is one of the four major elements of hip-hop culture.<br>
-            The music accompaniment style used began with hip-hop music and rhythm and blues,<br>
+          <p class="pop">Breakdance is one of the four culture.<br>
+            The music accompaniment style used rhythm and blues,<br>
             and then fed back the development of hip-hop music to this day.<br>
             As the most popular type of hip-hop dance, <br>
-            its influence has evolved from the limited non-mainstream communication <br>
-            in the United States at the beginning to the wide spread of the world, <br>
+            its influence has evolved from the limited <br>
+            in the United States at the beginning to the <br>
             becoming a part of modern dance culture.</p>
         </div>
         <div class="video_break">
@@ -134,10 +172,10 @@
         <div class="free_intro">
           <h2 class="pop">FreeStyle</h2>
           <p class="pop">Hip-hop is a marginal subculture between African and Latino <br>
-            youths originating from the South Bronx and Harlem in New York City in the 1970s.<br>
-            It then developed and expanded into a new art form and swept the world. <br>
-            Hip-hop includes four elements: rap, DJ, floor break dancing and graffiti. <br>
-            In addition, subcultures such as rhythmic ventriloquism, hip-hop fashion, <br>
+            youths the South Bronx and Harlem in New York City in the 1970s.<br>
+            It and expanded into a new art form and swept the world. <br>
+            four elements: rap, DJ, floor break dancing and graffiti. <br>
+            subcultures such as rhythmic ventriloquism, hip-hop fashion, <br>
             and hip-hop vulgar slang have also emerged.</p>
         </div>
         <div class="video_free">
@@ -156,6 +194,108 @@
       </div>
     </div>
   </div>
+  <!-- =====================================mini======================================================= -->
+  <div class="mini">
+    <div class="banner_intro_block_mini">
+      <div class="pop_block_mini">
+        <div class="pop_block_mini_img popp"><img class="mini" src="../img/pop.jpg" alt="">
+          <div class="pop_block_mini_img_text">
+            Popping
+          </div>
+        </div>
+        <div class="pop_block_mini_text popp1">
+          <h2 class="mini">Popping</h2>
+          <p class="mini">Popping is a style of funk dance and street dance.
+            It basically uses the technique of rapid muscle contraction and
+            relaxation to make the dancer's body feel shocked.
+            This technique is called "pop" or "hit".
+            With techniques such as "wave" and "isolation",
+            dancers will use a variety of different movements and poses to
+            match the rhythm and retake of the song.
+            Popping dancers are also called "popper".
+          </p>
+          <div class="video_mini">
+            <iframe class="pop" width=100% height="200" src="https://www.youtube.com/embed/5pbjQZrMrGQ" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+      <!-- ============================================================================ -->
+      <div class="pop_block_mini">
+        <div class="pop_block_mini_img loc"><img class="mini" src="../img/lock1.jpg" alt="">
+          <div class="pop_block_mini_img_text">
+            Locking
+          </div>
+        </div>
+        <div class="pop_block_mini_text loc1">
+          <h2 class="mini">Locking</h2>
+          <p class="mini">Locking dance (originally called Campbellocking)
+            is a style of funk dance and hip-hop dance,
+            and is now also associated with hip-hop.
+            The lock dance relies on fast, obvious arm and elbow movements,
+            matching comparison</p>
+          </p>
+          <div class="video_mini">
+            <iframe width=100% height="200" src="https://www.youtube.com/embed/ApJJViPVk2k" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ======================================================================= -->
+    <!-- =====================================mini-2======================================================= -->
+    <div class="banner_intro_block_mini">
+      <div class="pop_block_mini">
+        <div class="pop_block_mini_img bre"><img class="mini" src="../img/break.jpg" alt="">
+          <div class="pop_block_mini_img_text">
+            Breaking
+          </div>
+        </div>
+        <div class="pop_block_mini_text bre1">
+          <h2 class="mini">Breaking</h2>
+          <p class="mini">Breakdance is one of the four culture.
+            The music accompaniment style used rhythm and blues,
+            and then fed back the development of hip-hop music to this day.
+            As the most popular type of hip-hop dance,
+            its influence has evolved from the limited
+            in the United States at the beginning to the
+            becoming a part of modern dance culture.</p>
+          </p>
+          <div class="video_mini">
+            <iframe width=100% height="200" src="https://www.youtube.com/embed/VedN9Sp9AkU" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+      <!-- =========================================================================== -->
+      <div class="pop_block_mini">
+        <div class="pop_block_mini_img fre"><img class="mini" src="../img/fre.jpg" alt="">
+          <div class="pop_block_mini_img_text ">
+            Freestyle
+          </div>
+        </div>
+        <div class="pop_block_mini_text fre1">
+          <h2 class="mini">Freestyle</h2>
+          <p class="mini">Hip-hop is a marginal subculture between African and Latino
+            youths the South Bronx and Harlem in New York City in the 1970s.
+            It and expanded into a new art form and swept the world.
+            four elements: rap, DJ, floor break dancing and graffiti.
+            subcultures such as rhythmic ventriloquism, hip-hop fashion,
+            and hip-hop vulgar slang have also emerged.
+          </p>
+          <div class="video_mini">
+            <iframe width=100% height="200" src="https://www.youtube.com/embed/aTjzcPFLEYY" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ======================================================================= -->
   <div class="bread">
     <li><a href="../index.html">Home</a></li>
     <li>Normal Class</li>
@@ -221,10 +361,11 @@
         for those who have studied dance within 1 year to participate.
       </li>
     </ul>
-    <div class="course">
-      <button class="course">
-        View Course
-      </button>
+    <div class="course"><a href="./course.html">
+        <button class="course">
+          View Course
+        </button>
+      </a>
     </div>
   </div>
 
@@ -256,8 +397,8 @@
         </div>
         <div class="text_price">
           ＄9900 / 30 classes<br>
-          ＄7600 / 20 classes<br>
-          ＄4300 / 10 classes
+          ＄7600 / 20 classes
+
         </div>
       </div>
     </div>
@@ -282,10 +423,6 @@
   </a>
   <div class="footer">
     <div class="footer_block">
-      <div class="fb"><img src="../img/FB.png" alt="">
-      </div>
-      <div class="ig"><img src="../img/ig.png" alt="">
-      </div>
       <div class="footer_img"><img src="../img/footer.png" alt="">
       </div>
       <div class="footer_aside">
@@ -319,7 +456,60 @@
         </ul>
       </div>
     </div>
+    <div class="icon">
+      <a href="#"><i class="fab fa-facebook-square fa-3x"></i></a>
+      <a href="#"><i class="fab fa-instagram fa-3x"></i></a>
+      <a href="#"><i class="fab fa-twitter fa-3x"></i></a>
+    </div>
   </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script>
+    $(function () {
+      $("li.login").on("click", function () {
+        $("div.login-box").slideToggle();
+        event.stopPropagation();
+      });
+      $("body").on("click", function () {
+        $("div.login-box").css("display", 'none');
+        event.stopPropagation();
+      });
+      $('div.login-box').on('click', function () {
+        $(this).css('display', 'block')
+        event.stopPropagation();
+      })
+    });
+
+    $(function () {
+      $("button.hamburger").on("click", function () {
+        $(this).toggleClass("is-active");
+      });
+
+    });
+    $(function () {
+      $("div.burger").on("click", function () {
+        $("div.nav").slideToggle();
+      });
+    });
+    $(function () {
+      $("span.intro").on("click", function () {
+        $("ul.list").slideToggle();
+      });
+    });
+    $(function () {
+      $('div.popp').on('click', function () {
+        $('div.popp1').slideToggle();
+      });
+      $('div.loc').on('click', function () {
+        $('div.loc1').slideToggle();
+      });
+      $('div.bre').on('click', function () {
+        $('div.bre1').slideToggle();
+      });
+      $('div.fre').on('click', function () {
+        $('div.fre1').slideToggle();
+      });
+    });
+  </script>
 
 
 </body>

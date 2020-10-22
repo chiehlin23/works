@@ -3,7 +3,7 @@ div.banner_intro_block{
  white-space: nowrap;
  background-color: black;
  padding-top: 10px;
- min-width: 1200px;
+ min-width: 1140px;
  overflow: hidden;
 }
 div.pop,div.lock,div.break,div.free, div.pop_intro_block,div.lock_intro_block,div.break_intro_block,div.free_intro_block{
@@ -54,7 +54,7 @@ div.pop_intro{
   text-align: center;
   position: absolute;
   top:10%;
-  right:20%;
+  right:10%;
 }
 div.video{
   transform: skewX(-20deg);
@@ -181,7 +181,7 @@ div.free_block,div.pop_block,div.lock_block,div.break_block{
   display: inline-block;
 }
 div.intro_title{
-  width: 1200px;
+  width: 1140px;
   margin: 0 auto;
   text-align: center;
 }
@@ -211,7 +211,6 @@ div.cube_block{
   margin: 0 auto;
   width: 300px;
   height: 300px;
-
   perspective: 1000px;
   perspective-origin: 50% -150px;
   margin-top: 100px;
@@ -255,13 +254,13 @@ div.online_text,div.grade_text,div.diversification_text{
   color: #353866;
 }
 div.price{
-  width: 1200px;
+  width: 1140px;
   margin: 0 auto;
   text-align: center;
   padding-bottom: 20px;
 }
 div.grade_intro{
-  width: 1200px;
+  width: 1140px;
   margin: 0 auto;
   padding: 50px 0 20px 0;
 }
@@ -302,24 +301,25 @@ img.img{
 }
 div.text_price{
   color: #d499b9;
+  font-size: 20px;
 }
 div.vacation:hover div.vacation_img{
     border-radius: 10px;
-    transform: rotate(720deg);
+    
 }
 div.vacation:hover{
   transform: scale(1.2);
 }
 div.ticket:hover div.ticket_img{
     border-radius: 10px;
-    transform: rotate(720deg);
+   
 }
 div.ticket:hover{
   transform: scale(1.2);
 }
 div.alone:hover div.alone_img{
     border-radius: 10px;
-    transform: rotate(720deg);
+   
 }
 div.alone:hover{
   transform: scale(1.2);
@@ -339,5 +339,204 @@ button.course{
   transition-duration: 1s;
   background-color: #4f86c6;
   color:white;
+  border: 0;
   
+}
+
+/* =================mini====================================================== */
+
+div.mini{
+  background-image: url("../img/intro_mini.jpg");
+  background-position: center center;
+  background-size: cover;
+  padding: 20px;
+  display: none;
+}
+div.banner_intro_block_mini{
+  width: 720px;
+  margin: 0px auto 20px auto;
+
+}
+img.mini{
+  width: 100%;
+  
+  
+}
+div.pop_block_mini_img{
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+div.pop_block_mini_img::before{
+  content: " ";
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 30%;
+  height: 100%;
+  background-color:rgba(255,255,255,.5);
+  transform: skewX(20deg) translateX(-200%) ;
+  transition-duration :.5s ;
+  
+}
+div.pop_block_mini_img:hover::before{
+  transform: skewX(20deg) translateX(1000%) ;
+}
+
+div.pop_block_mini_text{
+  display: none;
+  
+}
+div.pop_block_mini_img_text{
+text-align: center;
+color: rgba(255,255,255,.8);
+position: absolute;
+top:50%;
+left:50%;
+transform: translate(-50% ,-50%);
+font-size: 60px;
+font-family: 'Sansita Swashed', cursive;
+
+}
+div.pop_block_mini{
+  display: inline-block;
+  width: 350px;
+  vertical-align: top;
+  /* border: 3px solid blue; */
+  border-radius: 40px;
+  overflow: hidden;
+ 
+  
+}
+div.popp1,div.fre1{
+  color: #353866;
+  background-color: #aaabd3;
+  padding: 20px;
+}
+div.loc1,div.bre1{
+  color: #353866;
+  background-color: #cba6c3;
+  padding: 20px;
+}
+h2.mini{
+  margin: 0;
+  text-align: center;
+  padding: 10px;
+}
+/* ========================RWD==================================== */
+@media screen and (max-width: 1199px){
+  div.banner_intro_block{
+    display: none;
+  }
+  div.mini{
+    display: block;
+  }
+  div.price{
+    width: 960px;
+    
+  }
+  div.grade_intro{
+    width: 960px;
+  }
+  div.intro_title{
+    width: 960px;
+    
+  }
+}
+@media screen and (max-width: 991px){
+  div.price{
+    width: 720px;
+    
+  }
+  div.grade_intro{
+    width: 720px;
+  }
+  div.intro_title{
+    width: 720px;
+    
+  }
+  
+  
+  
+}
+@media screen and (min-width: 768px){
+  div.nav{
+/*     display: block; */
+    display: inline-block !important;
+  }
+}
+@media screen and (max-width: 767px){
+  div.banner_intro_block_mini{
+    width: 540px;
+    margin: 0px auto 20px auto;
+    
+  
+  }
+  div.pop_block_mini{
+    display: inline-block;
+    width: 250px;
+    margin-right:10px ;
+  }
+  img.mini{
+    width: 140%;
+    
+    
+  }
+  div.price{
+    width: 540px;
+    
+  }
+  div.grade_intro{
+    width: 540px;
+  }
+  div.intro_title{
+    width: 540px;
+    
+  }
+  
+ 
+
+}
+@media screen and (max-width: 575px){
+  div.banner_intro_block_mini{
+    width: 100%;
+    margin: 0px auto 20px auto;
+  }
+  div.pop_block_mini{
+    display: block;
+    width: 100%;
+    margin-top:20px ;
+  }
+  img.mini{
+    width: 140%;
+    
+  }
+  div.price{
+    width: 100%;
+    
+  }
+  div.grade_intro{
+    width: 100%;
+  }
+  div.intro_title{
+    width: 100%;
+    
+  }
+  div.intro_title>h1{
+    color: #353866;
+    font-size: 40px;
+    
+  }
+  h2.title2{
+    text-align: center;
+    color: #9055a2;
+    font-size: 40px;
+  }
+  div.cube_block{
+    transform: scale(.9);
+  }
+  div.grade_intro{
+    padding-top: 0;
+  }
 }

@@ -14,6 +14,7 @@ div.img_class{
   /* border : 5px solid blue; */
   height: 600px;
   background-image: url("../img/class.png");
+  background-position: center center;
   background-size:cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -32,6 +33,7 @@ div.banner>ul.ball>li{
   border-radius: 50%;
   color: white;
   text-shadow: 2px 2px 3px black;
+  font-family: 'Sansita Swashed', cursive;
 }
 @keyframes move_1{
   0% {
@@ -147,7 +149,7 @@ div.banner>ul.ball>li.ball_1{
   top:35%;
   left:15%;
   animation-name: move_1;
-  animation-duration: 7s;
+  animation-duration: 14s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
@@ -157,7 +159,7 @@ div.banner>ul.ball>li.ball_2{
   top:35%;
   left:35%;
   animation-name: move_2;
-  animation-duration: 8s;
+  animation-duration: 16s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
@@ -167,7 +169,7 @@ div.banner>ul.ball>li.ball_3{
   top:35%;
   left:55%;
   animation-name: move_3;
-  animation-duration: 5s;
+  animation-duration: 10s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
@@ -177,7 +179,7 @@ div.banner>ul.ball>li.ball_4{
   top:35%;
   left:75%;
   animation-name: move_4;
-  animation-duration: 6s;
+  animation-duration: 12s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }

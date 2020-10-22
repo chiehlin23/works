@@ -11,7 +11,10 @@
   <link rel="stylesheet" href="../css/media_header.css">
   <link rel="stylesheet" href="../css/course.css">
   <link rel="stylesheet" href="../vanders/AOS/css.css">
-  <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+    integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
 </head>
 
 <body>
@@ -20,7 +23,7 @@
       <div class="logo"><a href="../index.html"><img class="logo" src="../img/LOGO.png" alt=""></a></div>
       <div class="nav">
         <ul class="nav">
-          <li class="line"><a href="./course.html">Course</a></li>
+          <li class="page"><a href="./course.html">Course</a></li>
           <li class="line"><a href="./new.html">News</a></li>
           <li>
             <div class="instruction">
@@ -35,7 +38,7 @@
           </li>
           <li class="line"><a href="./space.html">Space</a></li>
           <li class="line"><a href="./items.html">Items</a></li>
-          <li class="line">Log in</li>
+          <li class="line login">Log in</li>
         </ul>
       </div>
       <div class="burger">
@@ -45,15 +48,33 @@
           </span>
         </button>
       </div>
-      <div class="fb_top"><img src="../img/FB.png" alt="">
-      </div>
-      <div class="ig_top"><img src="../img/ig.png" alt="">
-      </div>
-
     </div>
-
-
   </div>
+  <!-- ===================================login========================================== -->
+
+  <div class="login-box">
+    <h2>Login</h2>
+    <form>
+      <div class="user-box">
+        <input type="text" name="" required="">
+        <label>Username</label>
+      </div>
+      <div class="user-box">
+        <input type="password" name="" required="">
+        <label>Password</label>
+      </div>
+      <div class="login_submit"><a href="#">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Submit
+        </a>
+      </div>
+    </form>
+  </div>
+  <!-- ======================================================== -->
+
 
   <div class="img_class">
     <div class="banner">
@@ -282,10 +303,6 @@
   </div>
   <div class="footer">
     <div class="footer_block">
-      <div class="fb"><img src="../img/FB.png" alt="">
-      </div>
-      <div class="ig"><img src="../img/ig.png" alt="">
-      </div>
       <div class="footer_img"><img src="../img/footer.png" alt="">
       </div>
       <div class="footer_aside">
@@ -319,6 +336,11 @@
         </ul>
       </div>
     </div>
+    <div class="icon">
+      <a href="#"><i class="fab fa-facebook-square fa-3x"></i></a>
+      <a href="#"><i class="fab fa-instagram fa-3x"></i></a>
+      <a href="#"><i class="fab fa-twitter fa-3x"></i></a>
+    </div>
   </div>
   <a href="./reserve.html">
     <div class="rent">
@@ -332,6 +354,22 @@
     AOS.init();
   </script>
   <script>
+    $(function () {
+      $("li.login").on("click", function () {
+        $("div.login-box").slideToggle();
+        event.stopPropagation();
+      });
+      $("body").on("click", function () {
+        $("div.login-box").css("display", 'none');
+        event.stopPropagation();
+      });
+      $('div.login-box').on('click', function () {
+        $(this).css('display', 'block')
+        event.stopPropagation();
+      })
+    });
+
+
     $(function () {
       $("button.hamburger").on("click", function () {
         $(this).toggleClass("is-active");
@@ -350,6 +388,7 @@
     });
 
   </script>
+
 </body>
 
 </html>
