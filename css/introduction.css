@@ -1,3 +1,6 @@
+body{
+  background-color: #fffff5;
+}
 div.banner_intro_block{
  text-align: center;
  white-space: nowrap;
@@ -29,6 +32,7 @@ div.pop_text{
   font-size: 30px;
   color: white;
   text-shadow: 3px 3px 3px lightgray;
+  font-family: 'Sansita Swashed', cursive;
 }
 div.pop_intro_block{
   height: 600px;
@@ -47,6 +51,10 @@ div.pop_intro_block{
 }
 h2.pop{
   color: #353866;
+  
+}
+p.pop{
+  text-align: left;
 }
 div.pop_intro{
   /* border: 1px solid blue; */
@@ -188,6 +196,7 @@ div.intro_title{
 div.intro_title>h1{
   color: #353866;
   font-size: 60px;
+  font-family: 'Sansita Swashed', cursive;
   
 }
 div.diversification,div.grade,div.online{
@@ -227,12 +236,15 @@ div.cube{
   width: 300px;
   height:300px;
 }
+div.cube:hover{
+  animation-play-state: paused;
+}
 div.face1{
   position: absolute;
   width: 300px;
   height:300px;
   transform: translateZ(100px) ;
-  background-color: #d4dfe6;
+  background-color: #a5d296;
 
 }
 div.face2{
@@ -252,6 +264,8 @@ div.face3{
 div.online_text,div.grade_text,div.diversification_text{
   margin-bottom: 10px;
   color: #353866;
+  text-align: left;
+  padding-bottom: 10px;
 }
 div.price{
   width: 1140px;
@@ -268,10 +282,9 @@ h2.title2{
   text-align: center;
   color: #9055a2;
   font-size: 40px;
+  font-family: 'Sansita Swashed', cursive;
 }
-div.grade_intro>ul>li{
-  color: #d499b9;
-}
+
 div.vacation,div.ticket,div.alone{
   width: 250px;
   height: 350px;
@@ -280,7 +293,7 @@ div.vacation,div.ticket,div.alone{
   transition-duration: 1s;
   position: relative;
   margin: 25px;
-  background-color: #f0e5de;
+  background-color:;
 }
 div.vacation_block,div.ticket_block,div.alone_block{
   position: absolute;
@@ -300,7 +313,7 @@ img.img{
   width: 300px;
 }
 div.text_price{
-  color: #d499b9;
+  
   font-size: 20px;
 }
 div.vacation:hover div.vacation_img{
@@ -460,12 +473,7 @@ h2.mini{
   
   
 }
-@media screen and (min-width: 768px){
-  div.nav{
-/*     display: block; */
-    display: inline-block !important;
-  }
-}
+
 @media screen and (max-width: 767px){
   div.banner_intro_block_mini{
     width: 540px;

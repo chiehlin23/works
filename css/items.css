@@ -1,3 +1,6 @@
+body{
+  background-color: #fffff5;
+}
 section.fade{
   width: 100%;
   overflow: hidden;
@@ -42,6 +45,7 @@ div.t11_price_block{
   width: calc(100% - 610px);
   height: 640px;
   position: relative;
+  
 }
 div.t11_price{
   position: absolute;
@@ -51,6 +55,7 @@ div.t11_price{
   padding: 50px;
   text-align: center;
   overflow: hidden;
+  width: 600px;
 }
 div.black{
   padding: 8px;
@@ -111,7 +116,7 @@ div.t11_price::before{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) rotate(0deg);
-  border: 1px solid blue;
+
   z-index: -2;
   background-image: linear-gradient(90deg, #EC7357, #fdd692), linear-gradient(135deg, #fdd692,#fbffb9), linear-gradient(180deg,#fbffb9,white), linear-gradient(white, white);
   background-size: 50% 50%;
@@ -133,7 +138,27 @@ div.t11_price::after{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  background-color: #fffff5;
   z-index: -1;
   background-color: white;
 
+}
+@media screen and (max-width: 1199px){
+
+ 
+
+}
+@media screen and (max-width: 991px){
+  
+}
+@media screen and (min-width: 768px){
+
+}
+@media screen and (max-width: 767px){
+
+ 
+
+}
+@media screen and (max-width: 575px){
+  
 }

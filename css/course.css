@@ -3,6 +3,7 @@
 }
 body{
   margin: 0;
+  background-color: #fffff5;
 }
 
 
@@ -110,11 +111,12 @@ div.monday{
   margin: 0 auto;
   text-align: center;
   overflow: hidden;
+  cursor: pointer;
 }
 div.monday>h1{
   color: #353866;
   font-size: 60px;
-
+  font-family: 'Sansita Swashed', cursive;
 }
 div.monday_left,div.monday_right{
   display: inline-block;
@@ -131,6 +133,8 @@ div.monday_right{
 div.monday_left_img_text,div.monday_right_img_text{
   color: #9055a2;
   font-size: 26px;
+  font-family: 'Sansita Swashed', cursive;
+  padding: 10px;
 }
 p{
   color: gray;
@@ -138,15 +142,19 @@ p{
 p.time{
   color: #9055a2;
   font-size: 26px;
+  margin-bottom: 100px;
 }
 p.text{
-  color: #d499b9;
+  color:black;
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 3;
+  text-align: left;
   
+  width: 50%;
+  margin: 10px auto 0 auto;
 }
 div.rent{
   border-radius: 10px;

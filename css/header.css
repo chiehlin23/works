@@ -43,7 +43,7 @@ div.nav{
 ul.nav{
   padding: 0;
 }
-ul.nav>li{
+ul.nav>a, ul.nav>li{
   display: inline-block;
   font-size: 24px;
   padding: 20px;
@@ -51,10 +51,10 @@ ul.nav>li{
   position: relative;
   cursor: pointer;
 }
-ul.nav>li>a{
+ul.nav>a{
   color:#353866;
 }
-ul.nav>li.line::before{
+ul.nav>a>li.line::before ,ul.nav>li.line::before {
   content: " ";
   height: 3px;
   width: 0%;
@@ -67,10 +67,13 @@ ul.nav>li.page{
   background-color:#8ec0e4;
   border-radius: 10px 10px 0 0  ;
 }
+ul.nav>a>li.line:hover::before{
+  width: 65%;
+}
 ul.nav>li.line:hover::before{
   width: 65%;
 }
-ul.nav>li>a{
+ul.nav>a{
   list-style: none;
   text-decoration: none;
 }
@@ -90,11 +93,11 @@ ul.list{
   opacity: 0;
   transition-duration: 1s;
 }
-ul.list>li{
+ul.list>a>li{
   padding: 10px;
   /* border-bottom: 1px solid white; */
 }
-ul.list>li>a{
+ul.list>li{
   text-decoration: none;
   font-size: 16px;
 }
@@ -167,8 +170,8 @@ div.bread>li>a:hover{
   border-radius: 10px;
   z-index: 99;
   display: none;
-
 }
+
 
 .login-box h2 {
   margin: 0 0 30px;

@@ -5,12 +5,15 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
   <title>Zoey Dance Studio</title>
+
   <link rel="stylesheet" href="./css/header.css">
   <link rel="stylesheet" href="./css/footer.css">
   <link rel="stylesheet" href="./css/burger.css">
   <link rel="stylesheet" href="./css/media_header.css">
   <link rel="stylesheet" href="./css/index.css">
   <link rel="stylesheet" href="./vanders/AOS/css.css">
+  <link rel="stylesheet" type="text/css" href="./vanders/slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="./vanders/slick/slick-theme.css">
 
   <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@500&display=swap" rel="stylesheet">
@@ -24,21 +27,40 @@
       </div>
       <div class="nav">
         <ul class="nav">
-          <li class="line"><a href="./html/course.html">Course</a></li>
-          <li class="line"><a href="./html/new.html">News</a></li>
+          <a href="./html/course.html">
+            <li class="line">Course</li>
+          </a>
+          <a href="./html/new.html">
+            <li class="line">News</li>
+          </a>
           <li>
             <div class="instruction">
-              <span class="intro">Introduction</span>
+              <span class="intro ">Introduction</span>
               <ul class="list">
-                <li><a href="./html/introduction.html">Normal</a></li>
-                <li><a href="./html/introduction.html">Showcase</a></li>
-                <li><a href="./html/introduction.html">Child</a></li>
-                <li><a href="./html/introduction.html">Special</a></li>
+                <a href="./html/introduction.html">
+                  <li>Normal</li>
+                </a>
+                <a href="./html/introduction.html">
+                  <li>Showcase</li>
+                </a>
+                <a href="./html/introduction.html">
+                  <li>Child</li>
+                </a>
+                <a href="./html/introduction.html">
+                  <li>Special</li>
+                </a>
               </ul>
+            </div>
           </li>
-          <li class="line"><a href="./html/space.html">Space</a></li>
-          <li class="line"><a href="./html/items.html">Items</a></li>
-          <li class="login line">Log in</li>
+          <a href="./html/space.html">
+            <li class="line">Space</li>
+          </a>
+
+          <a href="./html/items.html">
+            <li class="line">Items</li>
+          </a>
+
+          <li class="line login">Log in</li>
         </ul>
       </div>
       <div class="burger">
@@ -83,11 +105,7 @@
       Zoey
     </div>
   </div>
-  <div class="top_banner">
-    <div class="top_banner_text">
-      <p>Are you ready ?</p>
-    </div>
-  </div>
+
 
   <div class="BG2">
     <div class="news">
@@ -97,26 +115,61 @@
         </div>
         <div class="new">
           <ul class="new">
-            <li class="new1" data-aos="fade-up-right" data-aos-duration="1000" data-aos-once：ture><a
-                href="./html/new.html">
-                <img class="new1" src="./img/new1.jpeg" alt=""></a>
+            <li class="new1" data-aos="fade-up-right" data-aos-duration="1000" data-aos-once：ture>
+              <img class="new1" src="./img/new1.jpeg" alt="">
               <p>Keep on dancing vol.6</p></img>
             </li>
-            <li class="new2" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000" data-aos-once：ture><a
-                href="./html/new.html"><img class="new2" src="./img/new2.jpg"></a>
+            <li class="new2" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000" data-aos-once：ture><img
+                class="new2" src="./img/new2.jpg">
               <p>Student show 9/18 </p></img>
             </li>
-            <li class="new3" data-aos="fade-up-left" data-aos-duration="1000" data-aos-delay="500" data-aos-once：ture><a
-                href="./html/new.html"><img class="new3" src="./img/new3.jpg"></a>
+            <li class="new3" data-aos="fade-up-left" data-aos-duration="1000" data-aos-delay="500" data-aos-once：ture>
+              <img class="new3" src="./img/new3.jpg">
               <p>College high vol.11</p></img>
             </li>
           </ul>
         </div>
-        <div class="more_1"><a href="./new.html">more</a>
+        <div class="more_1"><a href="./html/new.html">more</a>
         </div>
       </div>
     </div>
   </div>
+  <!-- =======================================================news lightbox============================================================= -->
+  <div class="news_lightbox light1">
+    <div class="news_lightbox_img"><img class="new1" src="./img/new1.jpeg" alt=""></div>
+    <div class="news_lightbox_text">
+      <h1>Keep on dancing vol.6</h1>
+      <p>Boris Johnson had big plans for 2020. With the Brexit question that had torn the nation apart for nearly four
+        years finally settled, the Prime Minister was ready to spend some of the political capital he'd earned with his
+        landslide election victory to bring the nation together. Then Covid-19 happened.</p>
+    </div>
+    <button class="close1">X</button>
+  </div>
+  <div class="news_lightbox light2">
+    <div class="news_lightbox_img"><img class="new1" src="./img/new2.jpg" alt=""></div>
+    <div class="news_lightbox_text">
+      <h1>Student show 9/18</h1>
+      <p>Boris Johnson had big plans for 2020. With the Brexit question that had torn the nation apart for nearly four
+        years finally settled, the Prime Minister was ready to spend some of the political capital he'd earned with his
+        landslide election victory to bring the nation together. Then Covid-19 happened.</p>
+    </div>
+    <button class="close2">X</button>
+  </div>
+
+  <div class="news_lightbox light3">
+    <div class="news_lightbox_img"><img class="new1" src="./img/new3.jpg" alt=""></div>
+    <div class="news_lightbox_text">
+      <h1>College high vol.11</h1>
+      <p>Boris Johnson had big plans for 2020. With the Brexit question that had torn the nation apart for nearly four
+        years finally settled, the Prime Minister was ready to spend some of the political capital he'd earned with his
+        landslide election victory to bring the nation together. Then Covid-19 happened.</p>
+    </div>
+    <button class="close3">X</button>
+  </div>
+
+
+
+  <!-- ===========================================================course============================================================================== -->
   <div class="class_list">
     <div class="class_list_img">
       <img class="class_list_img" src="./img/home_pic.gif" alt="">
@@ -180,32 +233,71 @@
       </div>
     </div>
   </div>
-  <div class="item_bg">
+  <!-- ========================items============================================================= -->
+
+
+  <!-- ============================================================================== -->
+  <div class="item_bottom_bg">
     <div class="top_banner_text">
-      <p>Let's dance</p>
+      <div class="multiple-items">
+        <div>
+          <img class="shirt" src="./img/items/t11.jpg" alt="">
+        </div>
+        <div>
+          <img class="shirt" src="./img/items/t12.jpg" alt="">
+        </div>
+        <div>
+          <img class="shirt" src="./img/items/t13.jpg" alt="">
+        </div>
+        <div>
+          <img class="shirt" src="./img/items/t14.jpg" alt="">
+        </div>
+        <div>
+          <img class="shirt" src="./img/items/t15.jpg" alt="">
+        </div>
+        <div>
+          <img class="shirt" src="./img/items/t21.jpg" alt="">
+        </div>
+        <div>
+          <img class="shirt" src="./img/items/t22.jpg" alt="">
+        </div>
+        <div>
+          <img class="shirt" src="./img/items/t23.jpg" alt="">
+        </div>
+        <div>
+          <img class="shirt" src="./img/items/t24.jpg" alt="">
+        </div>
+        <div>
+          <img class="shirt" src="./img/items/t25.jpg" alt="">
+        </div>
+
+      </div>
     </div>
   </div>
-  <div class="space">
-    <div class="title_space" data-aos="fade-down" data-aos-once：ture>
-      <h1>Contact</h1>
+  <!-- ============================space================================== -->
+  <div class="space_bg">
+    <div class="space">
+      <div class="title_space">
+        <h1>Contact</h1>
+      </div>
+      <div class="img_space">
+        <img class="map" src="./img/map.png" alt="">
+      </div>
+      <div class="space_infro" data-aos="fade-right" data-aos-duration="3000" data-aos-once：ture>
+        <ul>
+          <li>9th Floor, No. 46, Fuxing Road, Zhongli District, Taoyuan City</li>
+          <li>03-425-8183</li>
+          <li>Monday to Friday 10:00~22:00 </li>
+          <li>Saturday and Sunday 10:00~18:00</li>
+        </ul>
+      </div>
+      <a href="./space.html">
+        <div class="space_buttom_block">
+          <div class="space_buttom">
+            View Space
+          </div>
+      </a>
     </div>
-    <div class="img_space" data-aos="fade-left" data-aos-duration="3000" data-aos-once：ture>
-      <img class="map" src="./img/map.png" alt="">
-    </div>
-    <div class="space_infro" data-aos="fade-right" data-aos-duration="3000" data-aos-once：ture>
-      <ul>
-        <li>9th Floor, No. 46, Fuxing Road, Zhongli District, Taoyuan City</li>
-        <li>03-425-8183</li>
-        <li>Monday to Friday 10:00~22:00 </li>
-        <li>Saturday and Sunday 10:00~18:00</li>
-      </ul>
-    </div>
-    <a href="./space.html">
-      <div class="space_buttom_block">
-        <div class="space_buttom">
-          View Space
-        </div>
-    </a>
   </div>
   </div>
 
@@ -257,11 +349,27 @@
   <!-- ===========================js====================== -->
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="./vanders/jquery/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="./vanders/slick/slick.min.js"></script>
   <script src="./vanders/AOS/js.js"></script>
   <script>
     AOS.init();
   </script>
   <script>
+    $('.multiple-items').slick({
+      infinite: true,
+      slidesToShow: 3,
+      slidesToScroll: 3,
+      autoplay: true,
+      autoplaySpeed: 2000,
+    });
+    $(function () {
+      let auto_play = $('video').attr('autoplay')
+      alert(auto_play)
+      $('video').addAttr('muted')
+
+
+    });
     $(function () {
       $("li.login").on("click", function () {
         $("div.login-box").slideToggle();
@@ -289,8 +397,40 @@
       });
     });
     $(function () {
-      $("span.intro").on("click", function () {
+      $("div.instruction").on("click", function () {
         $("ul.list").slideToggle();
+      });
+    });
+    $(function () {
+      $("img.new1").on("click", function () {
+        if ($('.light1').css("display") == 'block') {
+          $(".light1").stop(true).slideToggle()
+        } else if ($('.light1').css("display") == 'none') {
+          $(".light1").slideToggle(2000, 'easeOutBounce')
+        }
+      });
+      $("img.new2").on("click", function () {
+        if ($('.light2').css("display") == 'block') {
+          $(".light2").stop(true).slideToggle()
+        } else if ($('.light2').css("display") == 'none') {
+          $(".light2").slideToggle(2000, 'easeOutBounce')
+        }
+      });
+      $("img.new3").on("click", function () {
+        if ($('.light3').css("display") == 'block') {
+          $(".light3").stop(true).slideToggle()
+        } else if ($('.light3').css("display") == 'none') {
+          $(".light3").slideToggle(2000, 'easeOutBounce')
+        }
+      });
+      $("button.close1").on("click", function () {
+        $(".light1").slideToggle()
+      });
+      $("button.close2").on("click", function () {
+        $(".light2").slideToggle()
+      });
+      $("button.close3").on("click", function () {
+        $(".light3").slideToggle()
       });
     });
   </script>

@@ -22,21 +22,39 @@
       <div class="logo"><a href="../index.html"><img class="logo" src="../img/LOGO.png" alt=""></a></div>
       <div class="nav">
         <ul class="nav">
-          <li class="line"><a href="./course.html">Course</a></li>
-          <li class="line"><a href="./new.html">News</a></li>
+          <a href="./course.html">
+            <li class="line">Course</li>
+          </a>
+          <a href="./new.html">
+            <li class="line">News</li>
+          </a>
           <li>
             <div class="instruction">
-              <span class="intro">Introduction</span>
+              <span class="intro ">Introduction</span>
               <ul class="list">
-                <li><a href="./introduction.html">Normal</a></li>
-                <li><a href="./introduction.html">Showcase</a></li>
-                <li><a href="./introduction.html">Child</a></li>
-                <li><a href="./introduction.html">Special</a></li>
+                <a href="./introduction.html">
+                  <li>Normal</li>
+                </a>
+                <a href="./introduction.html">
+                  <li>Showcase</li>
+                </a>
+                <a href="./introduction.html">
+                  <li>Child</li>
+                </a>
+                <a href="./introduction.html">
+                  <li>Special</li>
+                </a>
               </ul>
             </div>
           </li>
-          <li class="line"><a href="./space.html">Space</a></li>
-          <li class="line"><a href="./items.html">Items</a></li>
+          <a href="./space.html">
+            <li class="line">Space</li>
+          </a>
+
+          <a href="./items.html">
+            <li class="line">Items</li>
+          </a>
+
           <li class="line login">Log in</li>
         </ul>
       </div>
@@ -103,34 +121,44 @@
         Rent Space
       </div>
     </div>
+
+    <!-- ====================================== -->
     <div class="block">
       <div class="class_block">
         <h1>Rent Class</h1>
         <div class="name">
-          <label for="name">Name :</label>
-          <input type="text" name="name" value="">
+          <div class="label first_name"> <label for="first_name">First name </label>
+
+            <input class="rent_class" type="text" name="name" value="">
+          </div>
+
+          <div class="label last_name"> <label for="last_name">Last name </label>
+
+            <input class="rent_class" type="text" name="name" value="">
+          </div>
         </div>
         <div class="phone">
-          <label for="phone">Phone :</label>
-          <input type="text" name="phone" value="">
+          <div class="label"> <label for="phone">Phone </label>
+          </div>
+          <input class="rent_class" type="text" name="phone" value="">
         </div>
         <div class="email">
-          <label for="email">E-mail :</label>
-          <input type="email" name="email" value="">
+          <div class="label"><label for="email">E-mail </label></div>
+          <input class="rent_class" type="email" name="email" value="">
         </div>
         <div class="date">
-          <label for="date">Date :</label>
-          <input type="date" name="date" value="">
+          <div class="label"><label for="date">Date </label></div>
+          <input class="rent_class" type="date" name="date" value="">
         </div>
         <div class="time">
-          <label for="time">Time :</label>
+          <div class="label"><label for="time">Time </label></div>
           <input type="radio" name="time" value="">
-          <label for="afternoon">PM 4:00 -PM 6:00</label>
+          <label for="afternoon">PM 4:00 -PM 6:00</label><br>
           <input type="radio" name="time" value="">
           <label for="afternoon">PM 7:00 -PM 9:00</label>
         </div>
         <div class="ps">
-          <label for="ps">Postscript :</label><br>
+          <label for="ps">Postscript </label><br>
           <textarea name="ps" rows="8" cols="40"></textarea>
         </div>
         <div class="buttom_send">
@@ -274,7 +302,7 @@
       });
     });
     $(function () {
-      $("span.intro").on("click", function () {
+      $("div.instruction").on("click", function () {
         $("ul.list").slideToggle();
       });
     });

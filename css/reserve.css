@@ -1,3 +1,6 @@
+body{
+  background-color: #fffff5;
+}
 div.bread>li:nth-child(3)::after{
   content: "/";
   margin-left:4px ;
@@ -215,19 +218,19 @@ div.block{
   position: relative;
   width: 100%;
   height: 600px;
-  text-align: center;
   background-color: #8ec0e4;
   border-radius: 0 40px 40px 40px;
+ 
 }
 div.class_block{
   width: 400px;
-  height: 430px;
   position: absolute;
   top:50%;
   left: 50%;
   transform: translate(-50%,-50%);
   background-color: #d4dfe6;
   transition-duration: 1.5s;
+  padding: 50px;
 }
 div.space_block>h1{
   color:#353866;
@@ -249,21 +252,49 @@ div.space_block:hover{
 div.class_block:hover{
   box-shadow: 20px 20px 5px black;
 }
-input{
-  margin-left: 5px;
+div.first_name, div.last_name{
+  display: inline-block;
+  width: 40%;
+  margin-right: 20px;
+  
+}
+input.rent_class{
   margin-bottom: 10px;
   border: 0;
+  width: 100%;
+  padding: 5px;
 }
 label{
   color:#9055a2;
+  font-size: 16px;
 }
 textarea{
   margin-top: 5px;
 }
+
 button.send{
   margin-top: 8px;
   padding: 5px 10px;
   color: white;
   background-color: #6c49b6;
   border: 0;
+}
+@media screen and (max-width: 1199px){
+
+ 
+
+}
+@media screen and (max-width: 991px){
+  
+}
+@media screen and (min-width: 768px){
+
+}
+@media screen and (max-width: 767px){
+
+ 
+
+}
+@media screen and (max-width: 575px){
+  
 }

@@ -83,7 +83,7 @@ i{
  
   
 }
-i:hover{
+div.icon>a>i:hover{
   
   animation-name: shake;
   animation-timing-function: linear;

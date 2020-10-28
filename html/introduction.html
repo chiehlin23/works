@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
   <title>Introduction</title>
+
   <link rel="stylesheet" href="../css/header.css">
   <link rel="stylesheet" href="../css/footer.css">
   <link rel="stylesheet" href="../css/burger.css">
@@ -22,21 +23,37 @@
       <div class="logo"><a href="../index.html"><img class="logo" src="../img/LOGO.png" alt=""></a></div>
       <div class="nav">
         <ul class="nav">
-          <li class="line"><a href="./course.html">Course</a></li>
-          <li class="line"><a href="./new.html">News</a></li>
+          <a href="./course.html">
+            <li class="line">Course</li>
+          </a>
+          <a href="./new.html">
+            <li class="line">News</li>
+          </a>
           <li class="page">
             <div class="instruction">
               <span class="intro page">Introduction</span>
               <ul class="list">
-                <li><a href="./introduction.html">Normal</a></li>
-                <li><a href="./introduction.html">Showcase</a></li>
-                <li><a href="./introduction.html">Child</a></li>
-                <li><a href="./introduction.html">Special</a></li>
+                <a href="./introduction.html">
+                  <li>Normal</li>
+                </a>
+                <a href="./introduction.html">
+                  <li>Showcase</li>
+                </a>
+                <a href="./introduction.html">
+                  <li>Child</li>
+                </a>
+                <a href="./introduction.html">
+                  <li>Special</li>
+                </a>
               </ul>
             </div>
           </li>
-          <li class="line"><a href="./space.html">Space</a></li>
-          <li class="line"><a href="./items.html">Items</a></li>
+          <a href="./space.html">
+            <li class="line">Space</li>
+          </a>
+          <a href="./items.html">
+            <li class="line">Items</li>
+          </a>
           <li class="line login">Log in</li>
         </ul>
       </div>
@@ -310,7 +327,7 @@
             <h3>Diversification</h3>
             <div class="diversification_text">
               The best faculty<br>
-              Many types of dance styles<br>
+              Many types of dance styles
               Let you own it once!
             </div>
             <div class="diversification_img">
@@ -322,7 +339,7 @@
           <div class="grade">
             <h3>Grade teaching</h3>
             <div class="grade_text">
-              Grading courses from shallow to deep <br>
+              Grading courses from shallow to deep
               Let you Happy and easy to learn to dance!
             </div>
             <div class="grade_img">
@@ -334,8 +351,8 @@
           <div class="online">
             <h3>online appointment</h3>
             <div class="online_text">
-              Online appointment is open for each class,<br>
-              Book a lesson first<br>
+              Online appointment is open for each class,
+              Book a lesson first
               Don't worry about not having classes!
             </div>
             <div class="online_img">
@@ -463,54 +480,7 @@
     </div>
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script>
-    $(function () {
-      $("li.login").on("click", function () {
-        $("div.login-box").slideToggle();
-        event.stopPropagation();
-      });
-      $("body").on("click", function () {
-        $("div.login-box").css("display", 'none');
-        event.stopPropagation();
-      });
-      $('div.login-box').on('click', function () {
-        $(this).css('display', 'block')
-        event.stopPropagation();
-      })
-    });
-
-    $(function () {
-      $("button.hamburger").on("click", function () {
-        $(this).toggleClass("is-active");
-      });
-
-    });
-    $(function () {
-      $("div.burger").on("click", function () {
-        $("div.nav").slideToggle();
-      });
-    });
-    $(function () {
-      $("span.intro").on("click", function () {
-        $("ul.list").slideToggle();
-      });
-    });
-    $(function () {
-      $('div.popp').on('click', function () {
-        $('div.popp1').slideToggle();
-      });
-      $('div.loc').on('click', function () {
-        $('div.loc1').slideToggle();
-      });
-      $('div.bre').on('click', function () {
-        $('div.bre1').slideToggle();
-      });
-      $('div.fre').on('click', function () {
-        $('div.fre1').slideToggle();
-      });
-    });
-  </script>
-
+  <script src="../js/intro.js"></script>
 
 </body>
 

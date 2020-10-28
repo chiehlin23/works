@@ -26,21 +26,37 @@
       <div class="logo"><a href="../index.html"><img class="logo" src="../img/LOGO.png" alt=""></a></div>
       <div class="nav">
         <ul class="nav">
-          <li class="line"><a href="./course.html">Course</a></li>
-          <li class="line"><a href="./new.html">News</a></li>
+          <a href="./course.html">
+            <li class="line">Course</li>
+          </a>
+          <a href="./new.html">
+            <li class="line">News</li>
+          </a>
           <li>
             <div class="instruction">
-              <span class="intro">Introduction</span>
+              <span class="intro ">Introduction</span>
               <ul class="list">
-                <li><a href="./introduction.html">Normal</a></li>
-                <li><a href="./introduction.html">Showcase</a></li>
-                <li><a href="./introduction.html">Child</a></li>
-                <li><a href="./introduction.html">Special</a></li>
+                <a href="./introduction.html">
+                  <li>Normal</li>
+                </a>
+                <a href="./introduction.html">
+                  <li>Showcase</li>
+                </a>
+                <a href="./introduction.html">
+                  <li>Child</li>
+                </a>
+                <a href="./introduction.html">
+                  <li>Special</li>
+                </a>
               </ul>
             </div>
           </li>
-          <li class="line"><a href="./space.html">Space</a></li>
-          <li class="page"><a href="./items.html">Items</a></li>
+          <a href="./space.html">
+            <li class="line">Space</li>
+          </a>
+
+          <li class="page">Items</li>
+
           <li class="line login">Log in</li>
         </ul>
       </div>
@@ -180,7 +196,7 @@
     <div class="t2">
       <div class="t11_price_block">
         <div class="t11_price">
-          <h2>College High vol.9 T-shirt</h2>
+          <h2>CollegeHigh vol.9 T-shirt</h2>
           <div class="color">
             <label for="color">Color</label>
             <input class="black" type="radio" name="color" value="">
@@ -413,7 +429,7 @@
       });
     });
     $(function () {
-      $("span.intro").on("click", function () {
+      $("div.instruction").on("click", function () {
         $("ul.list").slideToggle();
       });
     });
