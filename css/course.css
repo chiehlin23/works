@@ -55,7 +55,7 @@ body{
     }
   }
 div.img_class{
-  height: 600px;
+  height: 100vh;
   background-image: url("../img/worldfameus_2.png");
   background-repeat: no-repeat;
   /* background-color: rgba(13, 13, 13, 1); */

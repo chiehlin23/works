@@ -119,11 +119,12 @@ div.rent::before{
 div.rent:hover::before{
   left:110%;
 }
-div.space_main_block>h1{
+div.space_main_block>h1,div.space_main_block_mini>h1{
   text-align: center;
   font-size: 60px;
   color: #353866;
   margin-top: 100px;
+  font-family: 'Sansita Swashed', cursive;
   
 }
 div.phone_img>i{
@@ -210,6 +211,10 @@ div.space_main_block_mini{
     width: 668px;
     margin: 0 auto;
   }
+  div.room>p{
+    padding: 0 20px 0 20px; 
+  }
+
   div.phone_text,div.phone_img{
     display: block;
     width: 100%;
@@ -219,6 +224,7 @@ div.space_main_block_mini{
     text-align: center;
     font-size: 60px;
     color: #353866;
+    margin-bottom: 150px;
   }
   div.phone_text,div.phone_img{
     text-align: center;
@@ -231,6 +237,9 @@ div.space_main_block_mini{
   }
   div.space_block_mini{
     background: radial-gradient(circle at 25px 25px, rgba(200,226,237,1) 0%, rgba(176,176,227,1) 45%, rgba(247,170,151,1) 100%);;
+  }
+  div.phone_text>p{
+    padding: 10px;
   }
   button.slick-next, button.slick-arrow{
     display: none !important;

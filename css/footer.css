@@ -1,6 +1,6 @@
 div.footer{
   padding: 30px;
-  background-color: #6c49b8;
+  background-color: rgba(53,56,102,.8);
   min-width: 1140px;
 }
 div.footer_block{

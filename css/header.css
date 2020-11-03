@@ -21,7 +21,7 @@ div.header{
 
 }
 div.header_bg{
-  background-color: #d4dfe6;;
+  background-color: #fffff5;;
   width: 100%;
   min-width: 1140px;
 }
@@ -50,6 +50,7 @@ ul.nav>a, ul.nav>li{
   color: #353866;
   position: relative;
   cursor: pointer;
+  font-family: 'Sansita Swashed', cursive;
 }
 ul.nav>a{
   color:#353866;
@@ -86,7 +87,7 @@ ul.list{
   left: 15%;
   padding: 0;
   z-index: 2;
-  background-color: #6aafe6;
+  background-color: #fffff5;
   border-radius: 10px;
   visibility: hidden;
   height: 0;
@@ -114,9 +115,9 @@ div.instruction>span{
 div.instruction>span:after{
   content: " ";
   border-top: 8px solid #353866 ;
-  border-right:8px solid#d4dfe6 ;
-  border-bottom: 8px solid #d4dfe6;
-  border-left:8px solid#d4dfe6 ;
+  border-right:8px solid#fffff5 ;
+  border-bottom: 8px solid#fffff5;
+  border-left:8px solid#fffff5 ;
   position: absolute;
   top:50%;
   right: -15%;

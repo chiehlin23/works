@@ -11,7 +11,7 @@
       
     }
     div.header_bg{
-      background-color: #d4dfe6;
+     
       width: 100%;
       min-width: 960px;
     }
@@ -44,7 +44,7 @@
     }
     div.footer{
       padding: 30px;
-      background-color: #6c49b8;
+   
       min-width: 960px;
     }
     div.fb{
@@ -76,7 +76,7 @@
       display: inline-block;
       font-size: 20px;
       padding: 15px;
-      color: #353866;
+     
       position: relative;
     }
     div.instruction:hover ul.list{
@@ -85,17 +85,12 @@
       opacity: 1;
     }
     div.header_bg{
-      background-color: #d4dfe6;
+      
       width: 100%;
       min-width: 720px;
     }
     div.instruction>span:after{
-      content: " ";
-      border-top: 5px solid #353866 ;
-      border-right:5px solid#d4dfe6 ;
-      border-bottom: 5px solid #d4dfe6;
-      border-left:5px solid#d4dfe6 ;
-      position: absolute;
+    
       top:50%;
       right: -15%;
     }
@@ -109,7 +104,7 @@
     }
     div.footer{
       padding: 30px;
-      background-color: #6c49b8;
+   
       min-width: 720px;
     }
     div.footer_aside{
@@ -153,7 +148,7 @@
       left: 0%;
       padding: 0;
       z-index: 2;
-      background-color :#8ec0e4;
+    
       border-radius: 10px;
       visibility: visible;
       height: 160px;
@@ -168,12 +163,12 @@
       opacity: 1;
     }
     ul.list>li{
-      color: #353866;
+     
       font-size: 16px;;
     }
     
     div.header_bg{
-      background-color: #d4dfe6;
+      
       width: 100%;
       min-width: 540px;
     }
@@ -188,7 +183,7 @@
     }
     div.footer{
       padding: 30px;
-      background-color: #6c49b8;
+     
       min-width: 540px;
     }
     div.footer_aside{
@@ -229,7 +224,7 @@
    
     
     div.header_bg{
-      background-color: #d4dfe6;
+    
       width: 100%;
       min-width: 100%;
     }
@@ -244,7 +239,7 @@
     }
     div.footer{
       padding: 30px;
-      background-color: #6c49b8;
+     
       min-width: 100%;
     }
     div.footer_aside{

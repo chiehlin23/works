@@ -10,6 +10,8 @@
   <link rel="stylesheet" href="../css/burger.css">
   <link rel="stylesheet" href="../css/media_header.css">
   <link rel="stylesheet" href="../css/reserve.css">
+  <link rel="stylesheet" type="text/css" href="../vanders/slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="../vanders/slick/slick-theme.css">
   <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@500&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
@@ -92,16 +94,31 @@
   </div>
   <!-- ======================================================== -->
 
-  <div class="body_1">
-    <div class="img_class">
-      <div class="banner">
-        <ul class="ball">
-          <li class="ball_1">POPPING</li>
-          <li class="ball_2">LOCKING</li>
-          <li class="ball_3">BREAKING</li>
-          <li class="ball_4">FreeStyle</li>
-        </ul>
+  <div class="body_11">
+    <div class="img_rent">
+      <div class="fade_block1">
+        <section class="fade">
+          <div>
+            <img class="row" src="../img/rent1.jpg">
+          </div>
+          <div>
+            <img class="row" src="../img/rent2.jpg">
+          </div>
+          <div>
+            <img class="row" src="../img/rent3.jpg">
+          </div>
+          <div>
+            <img class="row" src="../img/rent4.jpg">
+          </div>
+          <div>
+            <img class="row" src="../img/rent5.jpg">
+          </div>
+          <div>
+            <img class="row" src="../img/rent6.jpg">
+          </div>
+        </section>
       </div>
+      <p class="rent">'The beautiful thing about learning is nobody can take it away from you' <br><br>-ZOEY</p>
     </div>
   </div>
   <div class="bread">
@@ -111,105 +128,200 @@
     <li><a href="./space.html">Space</a></li>
     <li>Rent</li>
   </div>
-  <div class="main">
 
-    <div class="reserve">
-      <div class="class">
-        Rent Class
-      </div>
-      <div class="space">
-        Rent Space
-      </div>
+
+  <!-- ====================================== -->
+
+  <div class="form_block">
+
+    <div class="form_click_btn">
+      <button class="click_sign">Sign up</button>
+      <button class="click_class">Rent class</button>
+      <button class="click_room">Rent space</button>
     </div>
 
-    <!-- ====================================== -->
-    <div class="block">
-      <div class="class_block">
-        <h1>Rent Class</h1>
-        <div class="name">
-          <div class="label first_name"> <label for="first_name">First name </label>
+    <div class="form_sign">
+      <div class="form_box">
+        <h2>Sign up</h2>
+        <form>
+          <div class='form_left'>
+            <div class="label_box">
+              <input class="width" type="text" name="" required="">
+              <label class="name">First name</label>
+            </div>
+            <div class="label_box">
+              <input class="width" type="text" name="" required="">
+              <label class="name">Last name</label>
+            </div>
+            <div class="label_box">
+              <input class="width" type="text" name="" required="">
+              <label class="name">Phone</label>
+            </div>
+            <div class="label_box">
+              <input class="width" type="email" name="" required="">
+              <label class="name">E-mail</label>
+            </div>
 
-            <input class="rent_class" type="text" name="name" value="">
-          </div>
 
-          <div class="label last_name"> <label for="last_name">Last name </label>
+          </div>
+          <div class='form_right'>
+            <div class="label_box">
+              <input class="width" type="text" name="" required="">
+              <label class="name">User name</label>
+            </div>
+            <div class="label_box">
+              <input class="width" type="password" name="" required="">
+              <label class="name">Password</label>
+            </div>
+            <div class="label_box">
+              <input class="width" type="password" name="" required="">
+              <label class="name">Confirm password</label>
+            </div>
+            <div class="label_box">
+              <input class="width" type="text" name="" required="">
+              <label class="name">Adress</label>
+            </div>
 
-            <input class="rent_class" type="text" name="name" value="">
+
           </div>
-        </div>
-        <div class="phone">
-          <div class="label"> <label for="phone">Phone </label>
+          <div class="label_box ps_class">
+            <label class="ps" for="ps">Postscript </label><br>
+            <textarea class="ps" name="ps" rows="7" cols="35"></textarea>
           </div>
-          <input class="rent_class" type="text" name="phone" value="">
-        </div>
-        <div class="email">
-          <div class="label"><label for="email">E-mail </label></div>
-          <input class="rent_class" type="email" name="email" value="">
-        </div>
-        <div class="date">
-          <div class="label"><label for="date">Date </label></div>
-          <input class="rent_class" type="date" name="date" value="">
-        </div>
-        <div class="time">
-          <div class="label"><label for="time">Time </label></div>
-          <input type="radio" name="time" value="">
-          <label for="afternoon">PM 4:00 -PM 6:00</label><br>
-          <input type="radio" name="time" value="">
-          <label for="afternoon">PM 7:00 -PM 9:00</label>
-        </div>
-        <div class="ps">
-          <label for="ps">Postscript </label><br>
-          <textarea name="ps" rows="8" cols="40"></textarea>
-        </div>
-        <div class="buttom_send">
-          <button class="send" type="submit" name="button">send</button>
-        </div>
+          <div class="form_btn">
+            <a href="#">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              Submit
+            </a>
+          </div>
+        </form>
       </div>
-      <!-- =========================space======================================== -->
+    </div>
+    <!-- ===============================class============================================= -->
+    <div class="form_class">
+      <div class="form_box">
+        <h2>Rent Class</h2>
+        <form>
+          <div class='form_left'>
+            <div class="label_box">
+              <input class="width" type="text" name="" required="">
+              <label class="name">First name</label>
+            </div>
+            <div class="label_box">
+              <input class="width" type="text" name="" required="">
+              <label class="name">Last name</label>
+            </div>
+            <div class="label_box">
+              <input class="width" type="text" name="" required="">
+              <label class="name">Phone</label>
+            </div>
+            <div class="label_box">
+              <input class="width" type="email" name="" required="">
+              <label class="name">E-mail</label>
+            </div>
 
-      <div class="space_block">
+          </div>
+          <div class='form_right'>
+            <div class="label_box">
+              <label class="date">Date</label><br>
+              <input class="width" type="date" name="" required="">
+            </div>
+            <div class="label_box">
+              <div class="Date class_time""><label for=" time">Time </label></div>
+              <input type="radio" name="time" value="">
+              <label for="afternoon">PM 4:00 -PM 6:00</label><br>
+              <input type="radio" name="time" value="">
+              <label for="afternoon">PM 7:00 -PM 9:00</label>
+            </div>
 
-        <h1>Rent Space</h1>
-        <div class="name">
-          <label for="name">Name :</label>
-          <input type="text" name="name" value="">
-        </div>
-        <div class="phone">
-          <label for="phone">Phone :</label>
-          <input type="text" name="phone" value="">
-        </div>
-        <div class="email">
-          <label for="email">E-mail :</label>
-          <input type="email" name="email" value="">
-        </div>
-        <div class="date">
-          <label for="date">Date :</label>
-          <input type="date" name="date" value="">
-        </div>
-        <div class="time">
-          <label for="time">From </label>
-          <input type="time" name="date" value="">
-          <label for="time">to </label>
-          <input type="time" name="date" value="">
-        </div>
-        <div class="class_rent">
-          <input type="radio" name="class" value="">
-          <label for="class_a">Class room A</label>
-          <input type="radio" name="class" value="">
-          <label for="class_b">Class room B</label>
-          <input type="radio" name="class" value="">
-          <label for="class_c">Class room C</label>
-        </div>
-        <div class="ps">
-          <label for="ps">Postscript :</label><br>
-          <textarea name="ps" rows="8" cols="40"></textarea>
-        </div>
-        <div class="buttom_send">
-          <button class="send" type="submit" name="button">send</button>
-        </div>
+          </div>
+          <div class="label_box ps_class">
+            <label class="ps" for="ps">Postscript </label><br>
+            <textarea class="ps" name="ps" rows="7" cols="35"></textarea>
+          </div>
+
+          <div class="form_btn">
+            <a href="#">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              Submit
+            </a>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- ===============================room===================================================== -->
+    <div class="form_room">
+      <div class="form_box">
+        <h2>Rent Space</h2>
+        <form>
+          <div class='form_left'>
+            <div class="label_box">
+              <input class="width" type="text" name="" required="">
+              <label class="name">First name</label>
+            </div>
+            <div class="label_box">
+              <input class="width" type="text" name="" required="">
+              <label class="name">Last name</label>
+            </div>
+            <div class="label_box">
+              <input class="width" type="text" name="" required="">
+              <label class="name">Phone</label>
+            </div>
+            <div class="label_box">
+              <input class="width" type="email" name="" required="">
+              <label class="name">E-mail</label>
+            </div>
+
+          </div>
+          <div class='form_right'>
+            <div class="label_box">
+              <label class="date">Date</label><br>
+              <input class="width" type="date" name="" required="">
+            </div>
+            <div class="label_box ">
+              <label class="date">From</label>
+              <input type="time" class="width" name="date" value=""><br>
+              <label class="date">to</label>
+              <input type="time" class="width" name="date" value="">
+            </div>
+
+          </div>
+          <div class=" date_class ">
+            <div class="room_title">
+              <label class="date ">Class room</label>
+            </div>
+            <input class="room" type="radio" name="class" value="">
+            <label class="room" for="class_a">Room A</label>
+            <input class="room" type="radio" name="class" value="">
+            <label class="room" for="class_b">Room B</label>
+            <input class="room" type="radio" name="class" value="">
+            <label class="room" for="class_c">Room C</label>
+            <input class="room" type="radio" name="class" value="">
+            <label class="room" for="class_d">Room D</label>
+            <input class="room" type="radio" name="class" value="">
+            <label class="room" for="class_e">Room E</label>
+          </div>
+
+          <div class="form_btn">
+            <a href="#">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              Submit
+            </a>
+          </div>
+        </form>
       </div>
     </div>
   </div>
+
   <!-- ===============================footer=================== -->
   <div class="footer">
     <div class="footer_block">
@@ -256,25 +368,57 @@
 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script type="text/javascript" src="../vanders/slick/slick.min.js"></script>
   <script>
 
     $(function () {
-      $("div.class").on("click", function () {
-        $("div.class_block").css("display", "block");
-        $("div.space_block").css("display", "none");
-        $("div.class").css("background-color", "#8ec0e4");
-        $("div.space").css("background-color", "#4f86c6");
+      $('.fade').slick({
+        autoplay: true,
+        autoplaySpeed: 1000,
+        dots: true,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear'
       });
-    });
-    $(function () {
-      $("div.space").on("click", function () {
-        $("div.space_block").css("display", "block");
-        $("div.class_block").css("display", "none");
-        $("div.space").css("background-color", "#8ec0e4");
-        $("div.class").css("background-color", "#4f86c6");
+
+      $("div.form_sign").delay(900).slideToggle()
+      $("button.click_sign").toggleClass("on3")
+
+
+      $("button.click_sign").click(function () {
+        $("div.form_sign").delay(900).slideToggle()
+        $(this).toggleClass("on3")
+        $("button.click_class").removeClass("on")
+        $("button.click_room").removeClass("on2")
+        $("div.form_class").css('display', 'none')
+        $("div.form_room").css('display', 'none')
+
+      });
+      $("button.click_class").click(function () {
+        $("div.form_class").delay(900).slideToggle()
+        $(this).toggleClass("on")
+
+        $("button.click_room").removeClass("on2")
+        $("button.click_sign").removeClass("on3")
+        $("div.form_sign").css('display', 'none')
+        $("div.form_room").css('display', 'none')
+
+      });
+      $("button.click_room").click(function () {
+        $("div.form_room").delay(900).slideToggle()
+        $(this).toggleClass("on2")
+
+        $("button.click_class").removeClass("on")
+        $("button.click_sign").removeClass("on3")
+        $("div.form_sign").css('display', 'none')
+        $("div.form_class").css('display', 'none')
+
+
       });
 
     });
+
     $(function () {
       $("li.login").on("click", function () {
         $("div.login-box").slideToggle();
