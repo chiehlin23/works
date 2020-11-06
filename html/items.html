@@ -58,6 +58,7 @@
           <li class="page">Items</li>
 
           <li class="line login">Log in</li>
+          <div class="user"><a href="./user.html"><img class="user" src="../img/cus/cus1.jpg" alt=""></a></div>
         </ul>
       </div>
       <div class="burger">
@@ -75,20 +76,21 @@
     <h2>Login</h2>
     <form>
       <div class="user-box">
-        <input type="text" name="" required="">
+        <input type="text" name="" required="" id="memId">
         <label>Username</label>
       </div>
       <div class="user-box">
-        <input type="password" name="" required="">
+        <input type="password" name="" required="" id="memPsw">
         <label>Password</label>
       </div>
-      <div class="login_submit"><a href="#">
+      <div class="login_submit">
+        <p>
           <span></span>
           <span></span>
           <span></span>
           <span></span>
           Submit
-        </a>
+        </p>
       </div>
     </form>
   </div>
@@ -586,68 +588,7 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script type="text/javascript" src="../vanders/slick/slick.min.js"></script>
-
-  <script type="text/javascript">
-    $('.fade').slick({
-      autoplay: true,
-      autoplaySpeed: 1000,
-      dots: true,
-      infinite: true,
-      speed: 500,
-      fade: true,
-      cssEase: 'linear'
-    });
-    $('.slider-for').slick({
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      arrows: false,
-      fade: true,
-      asNavFor: '.slider-nav'
-    });
-    $('.slider-nav').slick({
-      slidesToShow: 3,
-      slidesToScroll: 1,
-      asNavFor: '.slider-for',
-      dots: true,
-      centerMode: true,
-      focusOnSelect: true
-    });
-
-  </script>
-  <script>
-    $(function () {
-      $("li.login").on("click", function () {
-        $("div.login-box").slideToggle();
-        event.stopPropagation();
-      });
-      $("body").on("click", function () {
-        $("div.login-box").css("display", 'none');
-        event.stopPropagation();
-      });
-      $('div.login-box').on('click', function () {
-        $(this).css('display', 'block')
-        event.stopPropagation();
-      })
-    });
-
-    $(function () {
-      $("button.hamburger").on("click", function () {
-        $(this).toggleClass("is-active");
-      });
-
-    });
-    $(function () {
-      $("div.burger").on("click", function () {
-        $("div.nav").slideToggle();
-      });
-    });
-    $(function () {
-      $("div.instruction").on("click", function () {
-        $("ul.list").slideToggle();
-      });
-    });
-  </script>
-
+  <script type="text/javascript" src="../js/items.js"></script>
 </body>
 
 </html>

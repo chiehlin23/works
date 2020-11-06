@@ -58,6 +58,7 @@
           </a>
 
           <li class="line login">Log in</li>
+          <div class="user"><a href="./user.html"><img class="user" src="../img/cus/cus1.jpg" alt=""></a></div>
         </ul>
       </div>
       <div class="burger">
@@ -70,25 +71,25 @@
     </div>
   </div>
   <!-- ===================================login========================================== -->
-
   <div class="login-box">
     <h2>Login</h2>
     <form>
       <div class="user-box">
-        <input type="text" name="" required="">
+        <input type="text" name="" required="" id="memId">
         <label>Username</label>
       </div>
       <div class="user-box">
-        <input type="password" name="" required="">
+        <input type="password" name="" required="" id="memPsw">
         <label>Password</label>
       </div>
-      <div class="login_submit"><a href="#">
+      <div class="login_submit">
+        <p>
           <span></span>
           <span></span>
           <span></span>
           <span></span>
           Submit
-        </a>
+        </p>
       </div>
     </form>
   </div>
@@ -369,88 +370,8 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script type="text/javascript" src="../vanders/slick/slick.min.js"></script>
-  <script>
+  <script type="text/javascript" src="../js/reserve.js"></script>
 
-    $(function () {
-      $('.fade').slick({
-        autoplay: true,
-        autoplaySpeed: 1000,
-        dots: true,
-        infinite: true,
-        speed: 500,
-        fade: true,
-        cssEase: 'linear'
-      });
-
-      $("div.form_sign").delay(900).slideToggle()
-      $("button.click_sign").toggleClass("on3")
-
-
-      $("button.click_sign").click(function () {
-        $("div.form_sign").delay(900).slideToggle()
-        $(this).toggleClass("on3")
-        $("button.click_class").removeClass("on")
-        $("button.click_room").removeClass("on2")
-        $("div.form_class").css('display', 'none')
-        $("div.form_room").css('display', 'none')
-
-      });
-      $("button.click_class").click(function () {
-        $("div.form_class").delay(900).slideToggle()
-        $(this).toggleClass("on")
-
-        $("button.click_room").removeClass("on2")
-        $("button.click_sign").removeClass("on3")
-        $("div.form_sign").css('display', 'none')
-        $("div.form_room").css('display', 'none')
-
-      });
-      $("button.click_room").click(function () {
-        $("div.form_room").delay(900).slideToggle()
-        $(this).toggleClass("on2")
-
-        $("button.click_class").removeClass("on")
-        $("button.click_sign").removeClass("on3")
-        $("div.form_sign").css('display', 'none')
-        $("div.form_class").css('display', 'none')
-
-
-      });
-
-    });
-
-    $(function () {
-      $("li.login").on("click", function () {
-        $("div.login-box").slideToggle();
-        event.stopPropagation();
-      });
-      $("body").on("click", function () {
-        $("div.login-box").css("display", 'none');
-        event.stopPropagation();
-      });
-      $('div.login-box').on('click', function () {
-        $(this).css('display', 'block')
-        event.stopPropagation();
-      })
-    });
-
-    $(function () {
-      $("button.hamburger").on("click", function () {
-        $(this).toggleClass("is-active");
-      });
-
-    });
-    $(function () {
-      $("div.burger").on("click", function () {
-        $("div.nav").slideToggle();
-      });
-    });
-    $(function () {
-      $("div.instruction").on("click", function () {
-        $("ul.list").slideToggle();
-      });
-    });
-  </script>
 </body>
 
 </html>

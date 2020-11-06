@@ -162,9 +162,11 @@ div.rent{
   bottom: 20px;
   right: 10px;
   padding: 20px;
-  background: radial-gradient(circle at 25px 25px, rgba(200,226,237,1) 0%, rgba(176,176,227,1) 45%, rgba(247,170,151,1) 100%);
+  background-color: rgba(53,56,102,.8);
   z-index: 0;
   overflow: hidden;
+  font-family: 'Sansita Swashed', cursive;
+  color: #fffff5;
 }
 div.rent::before{
   content: " ";
@@ -180,6 +182,7 @@ div.rent::before{
 }
 div.rent:hover::before{
   left:110%;
+  
 }
 
 @media screen and (max-width: 1199px){
@@ -352,6 +355,7 @@ div.rent:hover::before{
     transform: scale(.7);
     right:0;
     bottom:0;
+    
   }
   
 }

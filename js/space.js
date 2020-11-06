@@ -1,3 +1,10 @@
+$('.login_submit').click(function () {
+    $(".login").css('display', 'none')
+    $("li.login").css('display', 'none')
+    $("div.user").css('display', 'inline-block')
+    $("div.login-box").slideToggle();
+});
+
 $(function () {
     $("li.login").on("click", function () {
         $("div.login-box").slideToggle();

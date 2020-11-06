@@ -67,6 +67,7 @@ ul.nav>a>li.line::before ,ul.nav>li.line::before {
 ul.nav>li.page{
   background-color:#8ec0e4;
   border-radius: 10px 10px 0 0  ;
+
 }
 ul.nav>a>li.line:hover::before{
   width: 65%;
@@ -97,15 +98,33 @@ ul.list{
 ul.list>a>li{
   padding: 10px;
   /* border-bottom: 1px solid white; */
+  color: #353866;
+  text-align: center;
 }
 ul.list>li{
   text-decoration: none;
   font-size: 16px;
+  text-align: center;
 }
 div.instruction:hover ul.list{
   visibility: visible;
   height: 200px;
   opacity: 1;
+}
+div.user{
+  width: 60px;
+  height: 60px;
+  vertical-align: bottom;
+  border-radius: 50%;
+  margin-bottom: 5px;
+  margin-left: 30px;
+  overflow: hidden;
+  padding: 0 ;
+  display: none;
+ 
+}
+img.user{
+  width: 60px;
 }
 div.instruction>span{
   position: relative;
@@ -149,10 +168,12 @@ div.bread>li:last-child::after{
 div.bread>li>a{
   color: #353866;
   font-family: 'Sansita Swashed', cursive;
+  font-size: 20px;
 }
 div.bread>li:last-child{
   color: #9055a2;
   font-family: 'Sansita Swashed', cursive;
+  font-size: 20px;
 }
 div.bread>li>a:hover{
   color:#6aafe6;
@@ -216,7 +237,7 @@ div.bread>li>a:hover{
   font-size: 12px;
 }
 
-.login-box form a {
+.login-box form p {
   position: relative;
   display: inline-block;
   padding: 10px 20px;
@@ -230,7 +251,7 @@ div.bread>li>a:hover{
   letter-spacing: 4px
 }
 
-.login-box a:hover {
+.login-box p:hover {
   background: #03e9f4;
   color: #fff;
   border-radius: 5px;
@@ -240,12 +261,12 @@ div.bread>li>a:hover{
       0 0 100px #03e9f4;
 }
 
-.login-box a span {
+.login-box p span {
   position: absolute;
   display: block;
 }
 
-.login-box a span:nth-child(1) {
+.login-box p span:nth-child(1) {
   top: 0;
   left: -100%;
   width: 100%;
@@ -265,7 +286,7 @@ div.bread>li>a:hover{
   }
 }
 
-.login-box a span:nth-child(2) {
+.login-box p span:nth-child(2) {
   top: -100%;
   right: 0;
   width: 2px;
@@ -286,7 +307,7 @@ div.bread>li>a:hover{
   }
 }
 
-.login-box a span:nth-child(3) {
+.login-box p span:nth-child(3) {
   bottom: 0;
   right: -100%;
   width: 100%;
@@ -307,7 +328,7 @@ div.bread>li>a:hover{
   }
 }
 
-.login-box a span:nth-child(4) {
+.login-box p span:nth-child(4) {
   bottom: -100%;
   left: 0;
   width: 2px;

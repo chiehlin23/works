@@ -4,6 +4,63 @@ $('.login_submit').click(function () {
     $("div.user").css('display', 'inline-block')
     $("div.login-box").slideToggle();
 });
+$('.fade').slick({
+    dots: true,
+    infinite: true,
+    speed: 500,
+    fade: true,
+    cssEase: 'linear'
+});
+$('.responsive').slick({
+    dots: true,
+    infinite: false,
+    speed: 300,
+    slidesToShow: 8,
+    slidesToScroll: 4,
+    responsive: [
+        {
+            breakpoint: 1439,
+            settings: {
+                slidesToShow: 6,
+                slidesToScroll: 3,
+                infinite: true,
+                dots: true
+            }
+        },
+        {
+            breakpoint: 1199,
+            settings: {
+                slidesToShow: 5,
+                slidesToScroll: 3,
+                infinite: true,
+                dots: true
+            }
+        },
+        {
+            breakpoint: 991,
+            settings: {
+                slidesToShow: 4,
+                slidesToScroll: 2
+            }
+        },
+        {
+            breakpoint: 767,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1
+            }
+        },
+        {
+            breakpoint: 575,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1
+            }
+        }
+
+    ]
+});
+
 
 $(function () {
     $("li.login").on("click", function () {
@@ -36,7 +93,6 @@ $(function () {
         $("ul.list").slideToggle();
     });
 });
-
 $(function () {
     $("div.new1").on("click", function () {
         if ($('.light1').css("display") == 'block') {
@@ -58,35 +114,34 @@ $(function () {
         } else if ($('.light3').css("display") == 'none') {
             $(".light3").slideToggle(2000, 'easeOutBounce')
         }
-    });
-    $("div.come1").on("click", function () {
-        if ($('.light1').css("display") == 'block') {
-            $(".light1").stop(true).slideToggle()
-        } else if ($('.light1').css("display") == 'none') {
-            $(".light1").slideToggle(2000, 'easeOutBounce')
-        }
-    });
-    $("div.come2").on("click", function () {
-        if ($('.light2').css("display") == 'block') {
-            $(".light2").stop(true).slideToggle()
-        } else if ($('.light1').css("display") == 'none') {
-            $(".light2").slideToggle(2000, 'easeOutBounce')
-        }
-    });
-    $("div.come3").on("click", function () {
-        if ($('.light3').css("display") == 'block') {
-            $(".light3").stop(true).slideToggle()
-        } else if ($('.light1').css("display") == 'none') {
-            $(".light3").slideToggle(2000, 'easeOutBounce')
-        }
+
     });
     $("button.close1").on("click", function () {
-        $(".light1").slideToggle()
+        $(".light1").slideUp()
     });
     $("button.close2").on("click", function () {
-        $(".light2").slideToggle()
+        $(".light2").slideUp()
     });
     $("button.close3").on("click", function () {
-        $(".light3").slideToggle()
+        $(".light3").slideUp()
     });
+    $(function () {
+        $("button.class").on("click", function () {
+            $("div.class_block").css('display', 'block');
+            $("div.class_style").css('display', 'none');
+            $("div.line_style").slideToggle();
+            $("div.line_class").slideToggle();
+
+        });
+
+
+        $("button.style").on("click", function () {
+            $("div.class_style").css('display', 'block');
+            $("div.class_block").css('display', 'none');
+            $("div.line_class").slideToggle();
+            $("div.line_style").slideToggle();
+
+        });
+    });
+
 });

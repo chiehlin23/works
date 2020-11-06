@@ -60,8 +60,11 @@
             <li class="line">Items</li>
           </a>
 
-          <li class="line login">Log in</li>
+          <li class="line login" id="login">Log in</li>
+          <div class="user"><a href="./html/user.html"><img class="user" src="./img/cus/cus1.jpg" alt=""></a></div>
+
         </ul>
+
       </div>
       <div class="burger">
         <button class="hamburger hamburger--squeeze" type="button">
@@ -78,20 +81,21 @@
     <h2>Login</h2>
     <form>
       <div class="user-box">
-        <input type="text" name="" required="">
+        <input type="text" name="" required="" id="memId">
         <label>Username</label>
       </div>
       <div class="user-box">
-        <input type="password" name="" required="">
+        <input type="password" name="" required="" id="memPsw">
         <label>Password</label>
       </div>
-      <div class="login_submit"><a href="#">
+      <div class="login_submit">
+        <p>
           <span></span>
           <span></span>
           <span></span>
           <span></span>
           Submit
-        </a>
+        </p>
       </div>
     </form>
   </div>
@@ -105,8 +109,6 @@
       Zoey
     </div>
   </div>
-
-
   <div class="BG2">
     <div class="new_block">
       <div class="title_new">
@@ -146,8 +148,6 @@
       <div class="more_1"><a href="./html/new.html">more</a>
       </div>
     </div>
-
-
     <!-- =======================================================news lightbox============================================================= -->
     <div class="news_lightbox light1">
       <div class="news_lightbox_img"><img class="new1" src="./img/new1.jpeg" alt=""></div>
@@ -171,7 +171,6 @@
       </div>
       <button class="close2">X</button>
     </div>
-
     <div class="news_lightbox light3">
       <div class="news_lightbox_img"><img class="new1" src="./img/new3.jpg" alt=""></div>
       <div class="news_lightbox_text">
@@ -183,9 +182,6 @@
       </div>
       <button class="close3">X</button>
     </div>
-
-
-
     <!-- ==================intro class========================================================================================================== -->
     <div class="intro">
       <div class="intro_block">
@@ -199,7 +195,6 @@
           <button class="style">Style
             <div class="line_style"></div>
           </button>
-
         </div>
         <div class="class_block">
           <a href="./html/introduction.html">
@@ -298,9 +293,6 @@
         </div>
       </div>
     </div>
-
-
-
     <!-- ====================================================== -->
     <div class="course">
       <div class="class_list">
@@ -360,18 +352,10 @@
         </div>
       </div>
     </div>
-
-
-
-
-
     <!-- ========================items============================================================= -->
-
-
-    <!-- ============================================================================== -->
     <div class="item_bottom_bg">
       <div class="top_banner_text">
-        <div class="multiple-items">
+        <div class="responsive">
           <div>
             <img class="shirt" src="./img/items/t11.jpg" alt="">
           </div>
@@ -405,11 +389,55 @@
 
         </div>
         <div class="items_btn">
-          <button class=" items">Items</button>
+          <a href="./html/items.html"><button class=" items">Items</button></a>
         </div>
       </div>
 
     </div>
+
+    <!-- ==============================item mini================================== -->
+    <div class="item_bottom_bg_mini">
+      <div class="top_banner_text_mini">
+        <div class="fade">
+          <div>
+            <img class="shirt_mini" src="./img/items/t11.jpg" alt="">
+          </div>
+          <div>
+            <img class="shirt_mini" src="./img/items/t12.jpg" alt="">
+          </div>
+          <div>
+            <img class="shirt_mini" src="./img/items/t13.jpg" alt="">
+          </div>
+          <div>
+            <img class="shirt_mini" src="./img/items/t14.jpg" alt="">
+          </div>
+          <div>
+            <img class="shirt_mini" src="./img/items/t15.jpg" alt="">
+          </div>
+          <div>
+            <img class="shirt_mini" src="./img/items/t21.jpg" alt="">
+          </div>
+          <div>
+            <img class="shirt_mini" src="./img/items/t22.jpg" alt="">
+          </div>
+          <div>
+            <img class="shirt_mini" src="./img/items/t23.jpg" alt="">
+          </div>
+          <div>
+            <img class="shirt_mini" src="./img/items/t24.jpg" alt="">
+          </div>
+          <div>
+            <img class="shirt_mini" src="./img/items/t25.jpg" alt="">
+          </div>
+
+        </div>
+        <div class="items_btn">
+          <a href="./html/items.html"><button class=" items">Items</button></a>
+        </div>
+      </div>
+
+    </div>
+
 
     <!-- ============================customers====================================================== -->
     <div class="customer">
@@ -542,133 +570,11 @@
   <script src="./vanders/jquery/jquery-ui.min.js"></script>
   <script type="text/javascript" src="./vanders/slick/slick.min.js"></script>
   <script src="./vanders/AOS/js.js"></script>
+  <script src="./js/index.js"></script>
   <script>
     AOS.init();
-
-    $(window).resize(function () {
-      if ($(window).width() > 1600) {
-        $('.multiple-items').slick({
-          infinite: true,
-          slidesToShow: 8,
-          slidesToScroll: 2,
-          autoplay: true,
-          autoplaySpeed: 2000,
-        })
-      } else {
-        $('.multiple-items').slick({
-          infinite: true,
-          slidesToShow: 6,
-          slidesToScroll: 2,
-          autoplay: true,
-          autoplaySpeed: 2000,
-        })
-      }
-    });
-
-    $(function () {
-      if ($(window).width() > 1600) {
-        $('.multiple-items').slick({
-          infinite: true,
-          slidesToShow: 8,
-          slidesToScroll: 2,
-          autoplay: true,
-          autoplaySpeed: 2000,
-        })
-      } else {
-        $('.multiple-items').slick({
-          infinite: true,
-          slidesToShow: 6,
-          slidesToScroll: 2,
-          autoplay: true,
-          autoplaySpeed: 2000,
-        })
-      }
-    });
-
-
-    $(function () {
-      $("li.login").on("click", function () {
-        $("div.login-box").slideToggle();
-        event.stopPropagation();
-      });
-      $("body").on("click", function () {
-        $("div.login-box").css("display", 'none');
-        event.stopPropagation();
-      });
-      $('div.login-box').on('click', function () {
-        $(this).css('display', 'block')
-        event.stopPropagation();
-      })
-    });
-
-    $(function () {
-      $("button.hamburger").on("click", function () {
-        $(this).toggleClass("is-active");
-      });
-
-    });
-    $(function () {
-      $("div.burger").on("click", function () {
-        $("div.nav").slideToggle();
-      });
-    });
-    $(function () {
-      $("div.instruction").on("click", function () {
-        $("ul.list").slideToggle();
-      });
-    });
-    $(function () {
-      $("div.new1").on("click", function () {
-        if ($('.light1').css("display") == 'block') {
-          $(".light1").stop(true).slideToggle()
-        } else if ($('.light1').css("display") == 'none') {
-          $(".light1").slideToggle(2000, 'easeOutBounce')
-        }
-      });
-      $("div.new2").on("click", function () {
-        if ($('.light2').css("display") == 'block') {
-          $(".light2").stop(true).slideToggle()
-        } else if ($('.light2').css("display") == 'none') {
-          $(".light2").slideToggle(2000, 'easeOutBounce')
-        }
-      });
-      $("div.new3").on("click", function () {
-        if ($('.light3').css("display") == 'block') {
-          $(".light3").stop(true).slideToggle()
-        } else if ($('.light3').css("display") == 'none') {
-          $(".light3").slideToggle(2000, 'easeOutBounce')
-        }
-      });
-      $("button.close1").on("click", function () {
-        $(".light1").slideUp()
-      });
-      $("button.close2").on("click", function () {
-        $(".light2").slideUp()
-      });
-      $("button.close3").on("click", function () {
-        $(".light3").slideUp()
-      });
-      $(function () {
-        $("button.class").on("click", function () {
-          $("div.class_block").css('display', 'block');
-          $("div.class_style").css('display', 'none');
-          $("div.line_style").slideToggle();
-          $("div.line_class").slideToggle();
-
-        });
-
-
-        $("button.style").on("click", function () {
-          $("div.class_style").css('display', 'block');
-          $("div.class_block").css('display', 'none');
-          $("div.line_class").slideToggle();
-          $("div.line_style").slideToggle();
-
-        });
-      });
-
-    });
   </script>
+
 
 </body>
 

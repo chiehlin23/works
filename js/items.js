@@ -5,6 +5,31 @@ $('.login_submit').click(function () {
     $("div.login-box").slideToggle();
 });
 
+$('.fade').slick({
+    autoplay: true,
+    autoplaySpeed: 1000,
+    dots: true,
+    infinite: true,
+    speed: 500,
+    fade: true,
+    cssEase: 'linear'
+});
+$('.slider-for').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: '.slider-nav'
+});
+$('.slider-nav').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    asNavFor: '.slider-for',
+    dots: true,
+    centerMode: true,
+    focusOnSelect: true
+});
+
 $(function () {
     $("li.login").on("click", function () {
         $("div.login-box").slideToggle();
@@ -34,19 +59,5 @@ $(function () {
 $(function () {
     $("div.instruction").on("click", function () {
         $("ul.list").slideToggle();
-    });
-});
-$(function () {
-    $('div.popp').on('click', function () {
-        $('div.popp1').slideToggle();
-    });
-    $('div.loc').on('click', function () {
-        $('div.loc1').slideToggle();
-    });
-    $('div.bre').on('click', function () {
-        $('div.bre1').slideToggle();
-    });
-    $('div.fre').on('click', function () {
-        $('div.fre1').slideToggle();
     });
 });
