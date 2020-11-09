@@ -13,6 +13,11 @@ $(function () {
             event.stopPropagation();
         })
     });
+    $(function () {
+        $("div.instruction").on("click", function () {
+            $("ul.list").slideToggle();
+        });
+    });
 
 
     $(function () {

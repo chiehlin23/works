@@ -267,5 +267,11 @@ div.items_mini{
   div.t11_price{
     width: 100%;
   }
+  h1{
+    
+    font-size: 40px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+  }
   
 }

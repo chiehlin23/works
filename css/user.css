@@ -29,6 +29,7 @@ div.user_nav1,div.user_nav2,div.user_nav3,div.user_nav4{
     height: calc((100vh - 73.68px)/4);
     text-align: center;
    cursor: pointer;
+   position: relative;
 }
 div.user_nav1{
     background-color: #011638;
@@ -42,10 +43,13 @@ div.user_nav3{
 div.user_nav4{
     background-color: #d499b6;
 }
-
-div.img_icon{
-    padding-top: 10%;
+div.user_nav1_icon{
+position: absolute;
+top:50%;
+left: 50%;
+transform: translate(-50%,-50%);
 }
+
 div.img_icon>i{
     color: #fffff5;
     
@@ -53,6 +57,7 @@ div.img_icon>i{
 p.img_icon_text{
     font-size: 20px;
     color: #fffff5;
+    line-height: 0;
 }
 div.open, div.close{
     position: absolute;
@@ -75,7 +80,9 @@ main.main{
     margin-top: 73.68px;
     margin-left:var(--aside-width) ;
 }
-
+@media screen and (min-width: 1800px){
+  
+}
 @media screen and (max-width: 1199px){
   
   }
@@ -105,12 +112,12 @@ main.main{
   }
   
   @media screen and (max-width: 767px){
-  
+   
    
   
   }
   @media screen and (max-width: 575px){
-   
+  
   }
   
 
@@ -243,6 +250,9 @@ button.amend{
         padding: 16px;
         font-size: 16px;
     }
+    div.user_infro_box>h2{
+        font-size: 30px;
+    }
 }
 /* ====================================================================== */
 div.class_list_box{
@@ -341,7 +351,7 @@ td.month{
 @media screen and (max-width: 575px){
     table.class_list{
         margin: 0 auto;
-        padding: 50px 0px 50px 0px;
+        padding: 20px 0px 50px 0px;
         width: 100%;
         
     }
@@ -353,6 +363,12 @@ td.month{
         background-color: rgba(53,56,102,.8);
         color: #fffff5;
         padding: .5px;
+    }
+    div.class_list_box>h2{
+        
+        font-size: 30px;
+      
+        
     }
 }
 
@@ -408,4 +424,12 @@ div.item_box>h2{
     padding-top: 50px;
     font-family: 'Sansita Swashed', cursive;
     color: #353866;
+}
+@media screen and (max-width: 575px){
+    div.item_box>h2{
+        font-size: 30px;
+    }
+    div.video_box>h2{
+        font-size: 30px;
+    }
 }

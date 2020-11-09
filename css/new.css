@@ -5,7 +5,9 @@ body{
   margin: 0;
   background-color: #fffff5;
 }
-
+div.body_1_mini{
+display: none;
+}
  div.body{
    width: 1140px;
    margin: 0 auto;
@@ -158,6 +160,17 @@ button.close1,button.close2,button.close3{
   div.body{
     width: 100%;
     margin: 0 auto;
+  }
+  div.body_1{
+    display: none;
+  }
+  div.body_1_mini{
+    display: block;
+    width: 100%;
+    overflow: hidden;
+  }
+  video.banner_mini{
+    transform: translateX(-24%);
   }
  
 }

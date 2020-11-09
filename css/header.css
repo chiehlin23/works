@@ -351,3 +351,12 @@ div.bread>li>a:hover{
 div.login_submit{
   text-align: center;
 }
+div.sign_up{
+text-align: center;
+
+}
+
+div.sign_up>a{
+  color: #03e9f4;
+
+}

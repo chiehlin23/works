@@ -295,17 +295,18 @@ div.rent:hover::before{
     text-align: center;
    
   }
+  div.monday>h1{
+    color: #353866;
+    font-size: 40px;
+    font-family: 'Sansita Swashed', cursive;
+    padding-bottom: 50px;
+  }
   div.monday_left,div.monday_right{
-    display: inline-block;
-    width: 300px;
-    vertical-align: top;
+    width: 300px;    
   }
   div.img_class{
     height: 600px;
-    background-image: url("../img/worldfameus_2.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    overflow: hidden;
+  
     min-width: 100%;
     
   }
@@ -313,7 +314,7 @@ div.rent:hover::before{
     width: 250px;
   }
   div.monday_right{
-    padding-top: 0px;
+    padding-top: 50px;
   }
   
   div.sp_time{

@@ -66,13 +66,13 @@ h3{
 }
 div.text{
   position: absolute;
-  top: 25%;
-  right:25%;
+  top: 20%;
+  right:20%;
   opacity: 1;
   transition-duration:1s;
-  font-size: 24px;
+  font-size: 40px;
   text-align: center;
-  color: #9055a2 ;
+  color: black ;
 }
 div.text1,div.text2,div.text3,div.text4,div.text5{
   position: absolute;
@@ -81,7 +81,7 @@ div.text1,div.text2,div.text3,div.text4,div.text5{
   opacity: 0;
   transition-duration:1s;
   font-size: 24px;
-  color: #9055a2 ;
+  
   
   
 }
@@ -163,7 +163,31 @@ div.space_block_mini{
 div.space_main_block_mini{
   display: none;
 }
-
+@media screen and (min-width: 1800px){
+  div.space_img1,div.space_img2,div.space_img3,div.space_img4,div.space_img5,div.space_img6,div.space_img7{
+   
+    width: 300px;
+    height: 200px;
+    
+  }
+  div.space_block{
+    
+    height: 880px;
+    
+  }
+  div.text1,div.text2,div.text3,div.text4,div.text5{
+    
+    font-size: 30px;
+    
+    
+    
+  }
+  div.text1>p,div.text2>p,div.text3>p,div.text4>p,div.text5>p{
+    
+    width: 500px;
+   
+  }
+}
 @media screen and (max-width: 1199px){
   div.text1,div.text2,div.text3,div.text4,div.text5{
     right: 10%;
@@ -261,6 +285,9 @@ div.space_main_block_mini{
   }
   div.phone_img>i{
     font-size: 90px;
+  }
+  div.space_main_block>h1,div.space_main_block_mini>h1{
+    font-size: 40px;
   }
   
 }
